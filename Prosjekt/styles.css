@@ -1,6 +1,6 @@
-/* Общие стили */
+/* Felles stiler */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Bold;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,9 +19,10 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: bold;
     color: #B10F0F;
+    text-decoration: none;
 }
 
 nav ul {
@@ -69,38 +70,67 @@ nav a {
     border: none;
     padding: 10px 40px;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+.search-box button:active {
+    background: #930d0d;
 }
 
 /* Featured section */
 .featured {
-    padding: 40px;
+    padding-bottom: 100px;
     text-align: center;
+}
+
+.featured h2 {
+    padding: 40px;
+    text-align: left;
+    padding-left: 60px;
 }
 
 .cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .card {
-    width: 300px;
+    width: 415px;
+    height: 350px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     text-align: left;
     background: white;
+    border-radius: 7px;
 }
 
 .card img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 7px;
+}
+
+.text {
+    margin-left: 20px;
+}
+
+
+.text h5 {
+    color: #2463EB;
+}
+
+.text p {
+    color: #4B5563;
+}
+
+.text span {
+    color: #000000;
+    margin-bottom: 30px;
 }
 
 /* Why choose section */
 .why-choose {
     background: #f8f8f8;
-    padding: 40px;
+    padding: 70px 40px;
     text-align: center;
 }
 
@@ -108,15 +138,20 @@ nav a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 40px 0;
 }
 
 .benefit {
-    width: 300px;
+    width: 400px;
+}
+
+.benefit p {
+    color: #4B5563;
 }
 
 /* Footer */
 footer {
-    background: #222;
+    background: #1F2937;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -126,11 +161,16 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 40px;
 }
 
 .column {
     width: 200px;
+    text-align: left;
+}
+
+.column p {
+    color: #9CA3AF;
 }
 
 .column ul {
@@ -138,17 +178,23 @@ footer {
     padding: 0;
 }
 
+.column li {
+    padding-bottom: 10px;
+}
+
 .column a {
     text-decoration: none;
-    color: white;
+    color: #9CA3AF;
 }
 
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
+
 }
 
-/* Адаптивность */
+/* Tilpasning */
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
