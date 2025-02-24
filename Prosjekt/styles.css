@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 5px 20px;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: #B10F0F;
     text-decoration: none;
