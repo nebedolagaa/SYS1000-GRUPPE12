@@ -23,25 +23,25 @@
     <section class="rental-form">
         <h1>Lei ut din bolig</h1>
         <div class="steps">
-            <p class="active">1. Grunnleggende informasjon</p>
-            <p>2. Fasiliteter og detaljer</p>
+            <p>1. Grunnleggende informasjon</p>
+            <p class="active">2. Fasiliteter og detaljer</p>
             <p>3. Bilder og beskrivelse</p>
         </div>
-        <form action="leiebolig-2.html">
-            <label for="title">Tittel på annonse</label>
-            <input type="text" id="title" name="title" placeholder="F.eks: Moderne hytte med fjordutsikt" required>
-            
-            <label for="adresse">Adresse</label>
-            <input type="text" id="adresse" name="adresse" required>
-            
-            <label for="poststed">Poststed</label>
-            <input type="text" id="poststed" name="poststed" required>
-            
-            <label for="postnummer">Postnummer</label>
-            <input type="text" id="postnummer" name="postnummer" required>
-            
-            <label for="areal">Bruksareal (m²)</label>
-            <input type="text" id="areal" name="areal" required>
+        <form action="leiebolig-3.html">
+            <label for="boligtype">Boligtype</label>
+            <input type="text" id="boligtype" name="boligtype" placeholder="F.eks: Leilighet, Hus, Hytte" required>
+        
+            <label for="soverom">Antall soverom</label>
+            <input type="number" id="soverom" name="soverom" min="1" placeholder="F.eks: 3" required>
+        
+            <label for="bad">Antall bad</label>
+            <input type="number" id="bad" name="bad" min="1" placeholder="F.eks: 2" required>
+        
+            <label for="maks_personer">Maks personer</label>
+            <input type="number" id="maks_personer" name="maks_personer" min="1" placeholder="F.eks: 6" required>
+        
+            <label for="fasiliteter">Fasiliteter</label>
+            <textarea id="fasiliteter" name="fasiliteter" placeholder="F.eks: WiFi, Parkering, Basseng" rows="4" required></textarea>
         
             <button type="submit">Neste</button>
         </form>
