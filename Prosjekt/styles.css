@@ -113,13 +113,13 @@ nav a {
     margin-left: 20px;
 }
 
-
 .text h5 {
     color: #2463EB;
 }
 
 .text p {
     color: #4B5563;
+    text-align: left;
 }
 
 .text span {
@@ -147,50 +147,6 @@ nav a {
 
 .benefit p {
     color: #4B5563;
-}
-
-/* Footer */
-footer {
-    background: #1F2937;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 40px;
-}
-
-.column {
-    width: 200px;
-    text-align: left;
-}
-
-.column p {
-    color: #9CA3AF;
-}
-
-.column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.column li {
-    padding-bottom: 10px;
-}
-
-.column a {
-    text-decoration: none;
-    color: #9CA3AF;
-}
-
-.footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-
 }
 
 /* Leie ut din bolig side */
@@ -243,8 +199,62 @@ input {
     border-radius: 5px;
 }
 
+.opprettet-annonsen h1, p{
+    text-align: center;
+}
+
+.opprettet-annonsen {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
 
+/* Footer */
+footer {
+    background: #1F2937;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.column {
+    width: 200px;
+    text-align: left;
+}
+
+.column p {
+    color: #9CA3AF;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column li {
+    padding-bottom: 10px;
+}
+
+.column a {
+    text-decoration: none;
+    color: #9CA3AF;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
 
 /* Tilpasning */
 

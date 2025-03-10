@@ -23,25 +23,25 @@
     <section class="rental-form">
         <h1>Lei ut din bolig</h1>
         <div class="steps">
-            <p class="active">1. Grunnleggende informasjon</p>
+            <p>1. Grunnleggende informasjon</p>
             <p>2. Fasiliteter og detaljer</p>
-            <p>3. Bilder og beskrivelse</p>
+            <p class="active">3. Bilder og beskrivelse</p>
         </div>
-        <form>
-            <label for="title">Tittel på annonse</label>
-            <input type="text" id="title" placeholder="F.eks: Moderne hytte med fjordutsikt">
-            
-            <label for="adresse">Adresse</label>
-            <input type="text" id="adresse">
-            
-            <label for="poststed">Poststed</label>
-            <input type="text" id="poststed">
-            
-            <label for="postnummer">Postnummer</label>
-            <input type="text" id="postnummer">
-            
-            <label for="areal">Bruksareal (m²)</label>
-            <input type="text" id="areal">
+        <form action="leiebolig-ferdig.html">
+            <label for="pris">Pris per døgn</label>
+            <input type="number" id="pris" name="pris" min="1" placeholder="F.eks: 1200" required>
+        
+            <label for="forsidebilde">Forsidebilde</label>
+            <input type="file" id="forsidebilde" name="forsidebilde" accept="image/*" required>
+        
+            <label for="tilleggsbilder">Tilleggsbilder</label>
+            <input type="file" id="tilleggsbilder" name="tilleggsbilder" accept="image/*" multiple>
+        
+            <label for="beskrivelse">Beskrivelse</label>
+            <textarea id="beskrivelse" name="beskrivelse" placeholder="F.eks: Koselig hytte med flott utsikt..." rows="5" required></textarea>
+        
+            <button type="submit">Neste</button>
+        </form>
         </form>
     </section>
     <footer>
