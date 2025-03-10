@@ -151,57 +151,8 @@ nav a {
     color: #4B5563;
 }
 
-<<<<<<< Updated upstream
-/* Footer */
-footer {
-    background: #1F2937;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 40px;
-}
-
-.column {
-    width: 200px;
-    text-align: left;
-}
-
-.column p {
-    color: #9CA3AF;
-}
-
-.column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.column li {
-    padding-bottom: 10px;
-}
-
-.column a {
-    text-decoration: none;
-    color: #9CA3AF;
-}
-
-.footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-
-}
-
-/* Leie ut din bolig side */
-.rental-form {
-=======
 /* Leie ut din bolig side - NP */
 .rental-form-NP {
->>>>>>> Stashed changes
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
@@ -232,14 +183,25 @@ footer {
     color: #2463EB;
 }
 
-form {
+.leiebolig-form {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.leiebolig-form button {
+    background: #B10F0F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    margin: 30px auto 0 auto;
 }
 
 label {
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 input {
@@ -250,11 +212,11 @@ input {
     border-radius: 5px;
 }
 
-<<<<<<< Updated upstream
+.opprettet-annonsen-NP p{
+    text-align: center;
+}
 
-
-=======
-.opprettet-annonsen-NP h1, p{
+.opprettet-annonsen-NP h1{
     text-align: center;
 }
 
@@ -310,8 +272,6 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 }
->>>>>>> Stashed changes
-
 /* Tilpasning */
 
 @media (max-width: 768px) {
