@@ -115,13 +115,13 @@ nav a {
     margin-left: 20px;
 }
 
+
 .text h5 {
     color: #2463EB;
 }
 
 .text p {
     color: #4B5563;
-    text-align: left;
 }
 
 .text span {
@@ -151,13 +151,8 @@ nav a {
     color: #4B5563;
 }
 
-<<<<<<< HEAD
 /* Leie ut din bolig side - NP */
 .rental-form-NP {
-=======
-/* Leie ut din bolig side */
-.rental-form {
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
@@ -166,45 +161,28 @@ nav a {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-<<<<<<< HEAD
 .rental-form-NP h1 {
-=======
-.rental-form h1 {
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
     text-align: center;
     font-size: 24px;
 }
 
-<<<<<<< HEAD
 .steps-NP {
-=======
-.steps {
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     padding: 0;
 }
 
-<<<<<<< HEAD
 .steps-NP p {
-=======
-.steps p {
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
     font-size: 14px;
     color: #888;
 }
 
-<<<<<<< HEAD
 .steps-NP p.active {
-=======
-.steps p.active {
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
     font-weight: bold;
     color: #2463EB;
 }
 
-<<<<<<< HEAD
 .leiebolig-form {
     display: flex;
     flex-direction: column;
@@ -219,20 +197,11 @@ nav a {
     border-radius: 7px;
     border: none;
     margin: 30px auto 0 auto;
-=======
-form {
-    display: flex;
-    flex-direction: column;
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
 }
 
 label {
     font-weight: bold;
-<<<<<<< HEAD
     margin-top: 20px;
-=======
-    margin-top: 10px;
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
 }
 
 input {
@@ -243,7 +212,6 @@ input {
     border-radius: 5px;
 }
 
-<<<<<<< HEAD
 .opprettet-annonsen-NP p{
     text-align: center;
 }
@@ -253,13 +221,6 @@ input {
 }
 
 .opprettet-annonsen-NP {
-=======
-.opprettet-annonsen h1, p{
-    text-align: center;
-}
-
-.opprettet-annonsen {
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
@@ -268,12 +229,7 @@ input {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-<<<<<<< HEAD
 /* Felles Footer */
-=======
-/* Footer */
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
 footer {
     background: #1F2937;
     color: white;
@@ -315,10 +271,6 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 3b45aa753640e69749f4d6e73cbc28a2e8d00227
 /* Tilpasning */
 
 @media (max-width: 768px) {
