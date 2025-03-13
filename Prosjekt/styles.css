@@ -330,7 +330,7 @@ form input {
     width: 80%;
     height: 20px;
     padding: 10px;
-    margin: 10px 0;
+    margin: 15px 0;
     border: 1px solid #ccc;
     border-radius: 7px;
 }
@@ -340,7 +340,7 @@ form input {
     text-align: center;
     font-size: 15px;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: -10px;
     text-decoration: none;
     color: #666;
 }
@@ -360,17 +360,12 @@ form .submit-btnKN {
     background: #4B5563;
 }
 
-.register-linkKN {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.registrer-linkKN a {
+.registrer-linkKN a,p {
     text-decoration: none;
     color: #666;
     font-weight: normal;
     font-size: 15;
-    margin-top: 10px;
+    margin-top: -5px;
 }
 
 
@@ -466,7 +461,7 @@ form .submit-btnKN {
     align-items: center; /* Aligns text and radio buttons */
     gap: 25px; /* Controls spacing between items */
     margin-top: 5px; /* Moves the whole section higher */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     flex-direction: row;
 }
 
