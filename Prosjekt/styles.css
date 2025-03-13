@@ -326,6 +326,290 @@ input {
     margin: 30px auto 0 auto;
 }
 
+/* JESPER SIN DEL */
+.JF-container {
+    max-width: 870px;
+    margin: 15px 0 15px 15px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.JF-search-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.JF-search-input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.JF-search-input label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 4px;
+    font-family: Arial, sans-serif;
+}
+
+.JF-search-input input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.JF-search-input input:focus {
+    border-color: black;
+    outline: none;
+}
+
+.JF-date-input {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.JF-date-wrapper {
+    flex: 1;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.JF-date-wrapper label {
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 4px;
+    font-family: Arial, sans-serif;
+}
+
+.JF-date-wrapper input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.JF-date-wrapper input:focus {
+    border-color: #B10F0F;
+    outline: none;
+}
+
+.JF-fasiliteter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.JF-fasiliteter-btn {
+    padding: 8px 15px;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    order: 5;
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-width: 110px;
+    text-align: left;
+}
+
+.JF-fasiliteter-options {
+    display: none;
+    position: absolute;
+    top: 88%;
+    left: 75.2%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.JF-fasiliteter-options label {
+    display: block;
+    font-size: 12px;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.JF-fasiliteter-options input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.JF-fasiliteter-select,
+.JF-filter-select,
+.JF-search-select {
+    padding: 8px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    min-width: 120px;
+    transition: border-color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.JF-fasiliteter-select:focus,
+.JF-filter-select:focus,
+.JF-search-select:focus {
+    border-color: black;
+    outline: none;
+}
+
+.JF-search-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #1F2937;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    width: 120px;
+    position: absolute;
+    right: 15px;
+    top: 85px;
+}
+
+.JF-search-btn:hover {
+    background-color: #4B5563;
+}
+
+.JF-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin-left: 15px;
+}
+
+.JF-listings > a > div {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+}
+
+.JF-listings img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.JF-listings div div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.JF-listings h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.JF-listings p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.JF-listings .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+
+.JF-listings {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.JF-iframe {
+    float: left;
+    width: 52%;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-left: 50px;
+    margin-right: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.JF-listing-link {
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Inherits text color from parent */
+    display: block; /* Makes the entire container clickable */
+}
+
+.JF-listing-link:hover {
+    background-color: #e0e0e0; /* Optional: Adds a hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+@media (max-width: 768px) {
+    .JF-listings, .JF-iframe {
+        float: none;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+    .JF-search-bar {
+        flex-direction: column;
+    }
+    .JF-search-btn {
+        position: static;
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .JF-listings .price {
+        position: static;
+        margin-top: 5px;
+    }
+}
 
 /* Felles Footer */
 footer {
