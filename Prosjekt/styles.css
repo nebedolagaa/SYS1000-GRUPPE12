@@ -190,9 +190,25 @@ nav a {
     padding: 20px;
 }
 
+.buttons-NP {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 .leiebolig-form button {
     background: #B10F0F;
     color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    margin: 30px auto 0 auto;
+}
+
+.leiebolig-form a {
+    background: #B10F0F;
+    color: white;
+    text-decoration: none;
     padding: 10px 20px;
     border-radius: 7px;
     border: none;
@@ -228,6 +244,88 @@ input {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Endre/Slette bolig - NP */
+
+.endre-form-NP {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+.endre-form-NP h1, .endre-form-NP h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Сетка для полей формы */
+.endre-form-NP form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 20px 30px; /* расстояние между полями */
+}
+
+/* Поля ввода */
+.endre-form-NP input[type="text"],
+.endre-form-NP input[type="number"],
+.endre-form-NP input[type="file"],
+.endre-form-NP textarea,
+.endre-form-NP select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+/* Подписи (label) */
+.endre-form-NP label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hover и focus эффекты */
+.endre-form-NP input:focus,
+.endre-form-NP textarea:focus,
+.endre-form-NP select:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+/* Textarea */
+.endre-form-NP textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.endre-form button {
+    background: #B10F0F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    margin: 30px auto 0 auto;
+}
+
+.endre-form a {
+    background: #B10F0F;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    margin: 30px auto 0 auto;
+}
+
 
 /* Felles Footer */
 footer {
