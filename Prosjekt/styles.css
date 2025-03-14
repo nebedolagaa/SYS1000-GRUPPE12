@@ -707,7 +707,7 @@ footer {
     margin-bottom: 20px;
 }
 
-form input {
+.logginn-formKN input {
     background-color: #F3F4F6;
     width: 80%;
     height: 20px;
@@ -727,7 +727,7 @@ form input {
     color: #666;
 }
 
-form .submit-btnKN {
+.submit-btnKN {
     width: 50%;
     background: #1F2937;
     color: white;
