@@ -682,6 +682,7 @@ footer {
     justify-content: center;
     width:100%;
     border-radius: 7px;
+    margin-top:30px;
 }
 
 .logo-loginKN{
@@ -758,8 +759,8 @@ footer {
 
 .registration-containerKN {
     background-color: white;
-    width: 800px;
-    height:680px;
+    width: 750px;
+    height:600px;
     margin: 40px auto;
     padding: 20px;
     border-right: 15px solid rgba(177, 15, 15, 0.67);
@@ -772,7 +773,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    gap: 20px;
+    gap:50px;
     margin: 20px;
     margin-left: 100px;
 }
@@ -863,7 +864,7 @@ footer {
     margin-top: 50px;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
-    margin-bottom: -5px; /* Moves the text closer to radio buttons */
+    margin-bottom: 20px; /* Moves the text closer to radio buttons */
     text-align: center;
 }
 
