@@ -265,29 +265,28 @@ nav a {
 .endre-form-NP form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px 50px;
+    gap: 20px 10px;
 }
+
 
 .endre-form-NP input[type="text"],
 .endre-form-NP input[type="number"],
 .endre-form-NP input[type="file"],
 .endre-form-NP textarea,
 .endre-form-NP select {
-    width: 100%;
+    width: 80%;
     padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 14px;
-    transition: border-color 0.3s;
+    border-radius: 7px;
 }
 
 /* label */
 .endre-form-NP label {
     display: block;
     margin-bottom: 6px;
+    margin-top: 10px;
     font-weight: bold;
-    color: #333;
 }
 
 .endre-form-NP input:focus,
@@ -299,7 +298,7 @@ nav a {
 
 .endre-form-NP textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 10px;
 }
 
 .buttons-NP {
@@ -309,24 +308,17 @@ nav a {
     margin: 30px 350px 30px 350px;
 }
 
-.endre-form-NP button {
+.endre-form-NP button, .endre-form-NP a {
     background: #B10F0F;
     color: white;
     padding: 10px 20px;
     border-radius: 7px;
     border: none;
     margin: 30px auto 0 auto;
+    font-size: 16px;
+    text-decoration: none;
 }
 
-.endre-form-NP a {
-    background: #B10F0F;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: none;
-    margin: 30px auto 0 auto;
-}
 
 /* JESPER SIN DEL */
 .JF-container {
@@ -610,66 +602,6 @@ nav a {
     }
 }
 
-/* Felles Footer */
-footer {
-    background: #1F2937;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    clear: both;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 40px;
-}
-
-.column {
-    width: 200px;
-    text-align: left;
-}
-
-.column p {
-    color: #9CA3AF;
-}
-
-.column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.column li {
-    padding-bottom: 10px;
-}
-
-.column a {
-    text-decoration: none;
-    color: #9CA3AF;
-}
-
-.footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-}
-/* Tilpasning */
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .search-box {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cards, .benefits, .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 
 /*Logg inn side KN*/
 .body-logginnKN{
@@ -807,7 +739,7 @@ footer {
 .registrer-formKN label{
     text-align: left;
     font-weight:20px;
-
+    
 }
 
 .submit-btnKN {
@@ -830,8 +762,8 @@ footer {
     justify-content: center; /* Sentrerer vertikalt */
     align-items: center; /* Sentrerer horisontalt */
     text-align: center; /* Sentrerer tekst */
-  }
-  
+}
+
 .submit-btnKN {
     margin: 30px 0; /* Litt mellomrom mellom elementene */
     padding: 0px 20px;
@@ -876,4 +808,64 @@ footer {
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 7px;
+}
+
+/* Felles Footer */
+footer {
+    background: #1F2937;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.column {
+    width: 200px;
+    text-align: left;
+}
+
+.column p {
+    color: #9CA3AF;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column li {
+    padding-bottom: 10px;
+}
+
+.column a {
+    text-decoration: none;
+    color: #9CA3AF;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+/* Tilpasning */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards, .benefits, .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
