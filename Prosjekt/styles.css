@@ -810,6 +810,250 @@ nav a {
     border-radius: 7px;
 }
 
+/* Bolig annonse - Magnus */
+
+.MB-image-showcase input[type="radio"] {
+    display: none;
+}
+
+.MB-image-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.MB-hoved-bilde {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.MB-slide {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#img1:checked ~ .MB-hoved-bilde .MB-slide#slide1,
+#img2:checked ~ .MB-hoved-bilde .MB-slide#slide2,
+#img3:checked ~ .MB-hoved-bilde .MB-slide#slide3,
+#img4:checked ~ .MB-hoved-bilde .MB-slide#slide4 {
+    display: block;
+}
+
+.MB-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.MB-thumb {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.MB-thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#img1:checked + .MB-thumbnails label[for="img1"] img,
+#img2:checked + .MB-thumbnails label[for="img2"] img,
+#img3:checked + .MB-thumbnails label[for="img3"] img,
+#img4:checked + .MB-thumbnails label[for="img4"] img {
+    border: 2px solid #B10F0F;
+}
+
+.MB-info-boks {
+    flex: 1; 
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.MB-info-boks h2 {
+    color: #000000;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.MB-ikon-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.MB-ikon-element {
+    text-align: center;
+}
+
+.MB-ikon-element i {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.MB-ikon-element p {
+    font-size: 14px;
+    color: #4B5563;
+}
+
+.MB-beskrivelse {
+    color: #4B5563;
+    line-height: 1.6;
+}
+
+.MB-adresse {
+    font-size: 14px;
+    color: #4B5563;
+    margin-bottom: 10px;
+}
+
+.MB-bruker-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.MB-bruker-navn {
+    font-size: 14px;
+    color: #000000;
+    margin: 0;
+}
+
+.MB-fasiliteter-info {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.MB-fasiliteter-info h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.MB-fasiliteter-boks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.MB-fasilitet-element {
+    width: 30%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.MB-fasilitet-element i {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.MB-fasilitet-element p {
+    font-size: 14px;
+    color: #4B5563;
+}
+
+.MB-info-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    max-width: 900px;
+    margin: 50px auto 0 auto; 
+    padding-top: 30px; 
+}
+
+.MB-pris-og-kalender {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.MB-pris-boks {
+    background: white;
+    border: 2px solid #c00;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.MB-pris-boks h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.MB-pris-boks p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.MB-pris-boks button {
+    background: #c00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.MB-pris-boks button:hover {
+    background: #900;
+}
+
+.MB-kalender-boks {
+    background: #ffffff;
+    border: 2px solid #B10F0F;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.MB-kalender-boks p {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #000; 
+}
+
+.MB-kalender-tittel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
 /* Felles Footer */
 footer {
     background: #1F2937;

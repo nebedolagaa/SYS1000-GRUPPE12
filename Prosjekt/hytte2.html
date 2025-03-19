@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderne Hytte i Hemsedal</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="hjemmeside.html"><h1>HomeRentals</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="leiebolig.html">Lei ut din bolig</a></li>
+                    <li><a href="logginn.html">Logg inn</a></li>
+                    <li><a href="registrering.html" class="register-btn">Registrer deg</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="MB-image-showcase">
+        <input type="radio" name="slider" id="img1" checked>
+        <input type="radio" name="slider" id="img2">
+        <input type="radio" name="slider" id="img3">
+        <input type="radio" name="slider" id="img4">
+        
+        <div class="MB-hoved-bilde"> 
+            <img src="bilder/hytte1.jpg" class="MB-slide" id="slide1">
+            <img src="bilder/hytte2.jpg" class="MB-slide" id="slide2">
+            <img src="bilder/hytte3.jpg" class="MB-slide" id="slide3">
+            <img src="bilder/hytte4.jpg" class="MB-slide" id="slide4">
+        </div>
+        
+        <div class="MB-thumbnails">
+            <label for="img1"><img src="bilder/hytte1.jpg" class="MB-thumb"></label>
+            <label for="img2"><img src="bilder/hytte2.jpg" class="MB-thumb"></label>
+            <label for="img3"><img src="bilder/hytte3.jpg" class="MB-thumb"></label>
+            <label for="img4"><img src="bilder/hytte4.jpg" class="MB-thumb"></label>
+        </div>
+    </div>
+
+    <div class="MB-info-container">
+        <div class="MB-info-boks"> 
+            <h2>Koselig Tømmerhytte ved Geilo</h2>
+            <div class="MB-ikon-container"> 
+                <div class="MB-ikon-element"> 
+                    <i class="fas fa-bed"></i>
+                    <span>4 soverom</span>
+                </div>
+                <div class="MB-ikon-element"> 
+                    <i class="fas fa-users"></i>
+                    <span>8 personer</span>
+                </div>
+                <div class="MB-ikon-element"> 
+                    <i class="fas fa-bath"></i>
+                    <span>2 Bad</span>
+                </div>
+                <div class="MB-ikon-element"> 
+                    <i class="fas fa-home"></i>
+                    <span>Hytte</span>
+                </div>
+            </div>
+            <p class="MB-adresse">Adresse: Fjellvegen 45, 3580 Geilo</p>
+            <p class="MB-beskrivelse">Denne sjarmerende tømmerhytta på Geilo er det perfekte stedet for en avslappende fjellferie, enten du vil stå på ski om vinteren eller nyte vakre turstier om sommeren. Hytta kombinerer tradisjonell norsk stil med moderne komfort, og har en romslig stue med peis, fullt utstyrt kjøkken og en hyggelig spiseplass.</p> 
+            <p class="MB-beskrivelse">Med fire soverom og to bad er det god plass til hele familien eller en vennegruppe. Hytta er godt utstyrt med alt du trenger, inkludert kjøkkenutstyr, sengetøy og WiFi. Uteområdet har en stor terrasse med flott utsikt over fjellene.</p> 
+            <div class="MB-bruker-info"> 
+                <i class="fas fa-user"></i>
+                <p class="MB-bruker-navn">Ole Kristiansen</p> 
+            </div>
+        </div>
+    
+        <div class="MB-pris-og-kalender">
+            <div class="MB-pris-boks">
+                <p>Pris</p>
+                <h2>kr 2500/natt</h2>
+                <button>Reserver</button>
+            </div>
+        
+            <div class="MB-kalender-boks">
+                <p class="MB-kalender-tittel">Se ledige datoer:</p>
+                <input type="date" id="start-dato" class="kalender-input">
+                <input type="date" id="slutt-dato" class="kalender-input">
+            </div>
+        </div>
+    </div>
+    
+    <div class="MB-fasiliteter-info"> 
+        <h2>Fasiliteter:</h2>
+        <div class="MB-fasiliteter-boks"> 
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-hot-tub"></i>
+                <p>Boblebad</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-utensils"></i>
+                <p>Grill</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-fire"></i>
+                <p>Peis</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-tshirt"></i>
+                <p>Vaskemaskin</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-parking"></i>
+                <p>Parkering</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-wifi"></i>
+                <p>WiFi</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h3>HomeRentals</h3>
+                <p>Din guide til de beste ferieopplevelsene i Norge.</p>
+            </div>
+            <div class="column">
+                <h3>Om oss</h3>
+                <ul>
+                    <li><a href="omoss.html">Om HomeRentals</a></li>
+                    <li><a href="karriere.html">Karriere</a></li>
+                    <li><a href="blogg.html">Blogg</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="hjelpesenter.html">Hjelpesenter</a></li>
+                    <li><a href="sikkerhet.html">Sikkerhet</a></li>
+                    <li><a href="avbestilling.html">Avbestilling</a></li>
+                    <li><a href="kontakt.html">Kontakt Oss</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Juridisk</h3>
+                <ul>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="vilkaar.html">Vilkår</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 HomeRentals. Alle rettigheter forbeholdt. Gruppe 12</p>
+    </footer>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    let startDato = document.getElementById("start-dato");
+    let sluttDato = document.getElementById("slutt-dato");
+
+    let today = new Date().toISOString().split("T")[0];
+    startDato.setAttribute("min", today);
+    sluttDato.setAttribute("min", today);
+
+    startDato.addEventListener("change", function () {
+        if (startDato.value && sluttDato.value && startDato.value > sluttDato.value) {
+            alert("Startdato kan ikke være etter sluttdato.");
+        } else {
+            alert("Startdato valgt: " + startDato.value);
+        }
+    });
+
+    sluttDato.addEventListener("change", function () {
+        if (startDato.value && sluttDato.value && startDato.value > sluttDato.value) {
+            alert("Startdato kan ikke være etter sluttdato.");
+        } else {
+            alert("Sluttdato valgt: " + sluttDato.value);
+        }
+    });
+});
+    </script>
+</body>
+</html>
