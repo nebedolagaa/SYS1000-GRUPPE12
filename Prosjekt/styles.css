@@ -95,6 +95,11 @@ nav a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.cards a {
+    text-decoration: none;
 }
 
 .card {
