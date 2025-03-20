@@ -827,7 +827,7 @@ nav a {
     align-items: center;
     justify-content: center;
     max-width: 900px;
-    margin: 20px auto;
+    margin: 40px auto 20px auto;
 }
 
 .MB-hoved-bilde {
@@ -943,8 +943,8 @@ nav a {
 .MB-fasiliteter-info {
     background-color: #f8f8f8;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 20px auto 40px auto; 
+    max-width: 900px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -1043,6 +1043,28 @@ nav a {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+.MB-kalender-rad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.MB-kalender-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.kalender-input {
+    width: 150px; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .MB-kalender-boks p {
