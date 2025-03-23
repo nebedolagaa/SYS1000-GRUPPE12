@@ -763,24 +763,24 @@ nav a {
 
 .bottom-containerKN {
     display: flex;
-    flex-direction: column; /* Plasserer elementene oppå hverandre */
-    justify-content: center; /* Sentrerer vertikalt */
-    align-items: center; /* Sentrerer horisontalt */
-    text-align: center; /* Sentrerer tekst */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
 }
 
 .submit-btnKN {
-    margin: 30px 0; /* Litt mellomrom mellom elementene */
+    margin: 30px 0; 
     padding: 0px 20px;
     font-size: 16px;
 }
 
 .radio-buttonKN {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Aligns text and radio buttons */
-    gap: 25px; /* Controls spacing between items */
-    margin-top: 5px; /* Moves the whole section higher */
+    justify-content: center;
+    align-items: center; 
+    gap: 25px; 
+    margin-top: 5px; 
     margin-bottom: 15px;
     flex-direction: row;
 }
@@ -788,12 +788,12 @@ nav a {
 .radio-buttonKN label {
     display: flex;
     align-items: center;
-    gap: 5px; /* Reduces space between radio button and text */
+    gap: 5px; 
     font-weight: bold;
 }
 
 .radio-buttonKN input[type="radio"]{
-    accent-color: #B10F0F; /* Change fill color */
+    accent-color: #B10F0F; 
     
 }
 
@@ -814,6 +814,43 @@ nav a {
     border: 1px solid #ccc;
     border-radius: 7px;
 }
+@media (max-width: 767px) {
+    .registrer-formKN {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        margin-right:59px;
+    }
+
+    .left-sideKN, 
+    .right-sideKN {
+        width: 80%;
+        align-items: left;
+
+    }
+
+    .radio-buttonKN {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration-containerKN {
+        width: 80%;
+        height:100%;
+        text-align: center;
+    }
+
+    .submit-btnKN {
+        width: 90%;
+        height: 45px;
+    }
+    .registrer-formKN input {
+        width: 140%;
+    }
+       
+}
+
 
 /* Bolig annonse - Magnus */
 
