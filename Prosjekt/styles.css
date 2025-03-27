@@ -1117,6 +1117,59 @@ nav a {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .MB-image-showcase {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .MB-hoved-bilde {
+        width: 100%;
+    }
+
+    .MB-thumb {
+        width: 70px;
+        height: 70px;
+    }
+
+    .MB-info-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .MB-info-boks, .MB-pris-og-kalender {
+        width: 100%;
+    }
+
+    .MB-pris-boks, .MB-kalender-boks {
+        width: 100%;
+    }
+
+    .MB-fasiliteter-boks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .MB-fasiliteter-boks {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .MB-ikon-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .MB-ikon-element {
+        width: 45%; 
+        text-align: center;
+    }
+}
+
 /* Profile section */
 .CB-sidebar {
     width: 250px;
