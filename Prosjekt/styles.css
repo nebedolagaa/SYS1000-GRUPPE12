@@ -838,24 +838,24 @@ nav a {
 
 .bottom-containerKN {
     display: flex;
-    flex-direction: column; /* Plasserer elementene oppå hverandre */
-    justify-content: center; /* Sentrerer vertikalt */
-    align-items: center; /* Sentrerer horisontalt */
-    text-align: center; /* Sentrerer tekst */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
 }
 
 .submit-btnKN {
-    margin: 30px 0; /* Litt mellomrom mellom elementene */
+    margin: 30px 0; 
     padding: 0px 20px;
     font-size: 16px;
 }
 
 .radio-buttonKN {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Aligns text and radio buttons */
-    gap: 25px; /* Controls spacing between items */
-    margin-top: 5px; /* Moves the whole section higher */
+    justify-content: center;
+    align-items: center; 
+    gap: 25px; 
+    margin-top: 5px; 
     margin-bottom: 15px;
     flex-direction: row;
 }
@@ -863,12 +863,12 @@ nav a {
 .radio-buttonKN label {
     display: flex;
     align-items: center;
-    gap: 5px; /* Reduces space between radio button and text */
+    gap: 5px; 
     font-weight: bold;
 }
 
 .radio-buttonKN input[type="radio"]{
-    accent-color: #B10F0F; /* Change fill color */
+    accent-color: #B10F0F; 
     
 }
 
@@ -889,6 +889,43 @@ nav a {
     border: 1px solid #ccc;
     border-radius: 7px;
 }
+@media (max-width: 767px) {
+    .registrer-formKN {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        margin-right:59px;
+    }
+
+    .left-sideKN, 
+    .right-sideKN {
+        width: 80%;
+        align-items: left;
+
+    }
+
+    .radio-buttonKN {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration-containerKN {
+        width: 80%;
+        height:100%;
+        text-align: center;
+    }
+
+    .submit-btnKN {
+        width: 90%;
+        height: 45px;
+    }
+    .registrer-formKN input {
+        width: 140%;
+    }
+       
+}
+
 
 /* Bolig annonse - Magnus */
 
@@ -1155,6 +1192,59 @@ nav a {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .MB-image-showcase {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .MB-hoved-bilde {
+        width: 100%;
+    }
+
+    .MB-thumb {
+        width: 70px;
+        height: 70px;
+    }
+
+    .MB-info-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .MB-info-boks, .MB-pris-og-kalender {
+        width: 100%;
+    }
+
+    .MB-pris-boks, .MB-kalender-boks {
+        width: 100%;
+    }
+
+    .MB-fasiliteter-boks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .MB-fasiliteter-boks {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .MB-ikon-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .MB-ikon-element {
+        width: 45%; 
+        text-align: center;
+    }
+}
+
 /* Profile section */
 .CB-sidebar {
     width: 250px;
@@ -1240,6 +1330,36 @@ nav a {
     margin: 10px 0;
     text-align: left;
 }
+
+
+/* Tilpasning */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .CB-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    .CB-profile-content {
+        padding: 10px;
+    }
+    .CB-info-section {
+        padding: 10px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* Help section */
 
@@ -1381,6 +1501,26 @@ nav a {
     background: #4B5563;
 }
 
+/*glemt-passord KN*/
+
+.logginn-containerKN h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.send-btnKN {
+    padding: 10px;
+    background-color: #1F2937;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 309px;
+    height: 45px;
+}
 
 /* Felles Footer */
 footer {
