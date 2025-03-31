@@ -609,7 +609,7 @@ nav a {
 
 /*Om oss side - JEF*/
 .JEF-main {
-    padding: 40px 20px 40px 0;
+    padding: 40px 20px 30px 0;
     min-height: 60vh;
     background-image: linear-gradient(to right, rgb(255, 255, 255), transparent), url('bilder/JFhytte-1-omoss-side.jpg');
     background-size: cover;
