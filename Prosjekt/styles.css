@@ -188,20 +188,19 @@ nav a {
     color: #2463EB;
 }
 
-.leiebolig-form {
+.leiebolig-form-NP {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     padding: 20px;
 }
 
-.buttons-NP {
+.leie-buttons-NP {
     display: flex;
     justify-content: space-around;
 }
 
-
-.leiebolig-form button {
+.leiebolig-form-NP button {
     background: #B10F0F;
     color: white;
     padding: 10px 20px;
@@ -210,7 +209,7 @@ nav a {
     margin: 30px auto 0 auto;
 }
 
-.leiebolig-form a {
+.leiebolig-form-NP a {
     background: #B10F0F;
     color: white;
     text-decoration: none;
@@ -220,12 +219,20 @@ nav a {
     margin: 30px auto 0 auto;
 }
 
-.leiebolig-form label {
+.leiebolig-form-NP label {
     font-weight: bold;
     margin-top: 20px;
 }
 
-.leiebolig-form input {
+.leiebolig-form-NP input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.leiebolig-form-NP textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -235,6 +242,7 @@ nav a {
 
 .opprettet-annonsen-NP p{
     text-align: center;
+    margin-top: 20px;
 }
 
 .opprettet-annonsen-NP h1{
@@ -1427,6 +1435,182 @@ nav a {
 }
 
 
+/* Om Oss side - NP */
+.omoss-main-NP {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.omoss-hero-NP {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.omoss-hero-NP h1 {
+    font-size: 32px;
+    color: #1F2937;
+    margin-bottom: 15px;
+}
+
+.omoss-hero-NP p {
+    color: #4B5563;
+    font-size: 16px;
+}
+
+.omoss-flex-NP {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.omoss-flex-reverse-NP {
+    flex-direction: row-reverse;
+}
+
+.omoss-text-NP {
+    flex: 1;
+}
+
+.omoss-text-NP h2 {
+    font-size: 24px;
+    color: #1F2937;
+    margin-bottom: 20px;
+}
+
+.omoss-text-NP p {
+    color: #4B5563;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.omoss-image-container-NP {
+    flex: 1;
+    text-align: center;
+}
+
+.omoss-image-NP {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-intro-NP, .about-goals-NP, .about-values-NP, .about-future-NP {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Values section */
+.omoss-values-grid-NP {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.omoss-value-card-NP {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.omoss-value-card-NP h3 {
+    font-size: 18px;
+    color: #1F2937;
+    margin-bottom: 10px;
+}
+
+.omoss-value-card-NP p {
+    color: #4B5563;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Contact section */
+.about-contact-NP {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-contact-NP h2 {
+    font-size: 24px;
+    color: #1F2937;
+    margin-bottom: 15px;
+}
+
+.omoss-contact-buttons-NP {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.omoss-button-NP {
+    display: inline-block;
+    background-color: #B10F0F;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.omoss-button-NP:hover {
+    background-color: #930d0d;
+}
+
+.omoss-button-secondary-NP {
+    background-color: #1F2937;
+}
+
+.omoss-button-secondary-NP:hover {
+    background-color: #4B5563;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .omoss-flex-NP {
+        flex-direction: column;
+    }
+    
+    .omoss-flex-reverse-NP {
+        flex-direction: column;
+    }
+    
+    .omoss-image-container-NP {
+        margin-top: 20px;
+    }
+    
+    .about-values-NP h2,
+    .about-contact-NP h2 {
+        font-size: 22px;
+    }
+    
+    .omoss-contact-buttons-NP {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .omoss-value-card-NP {
+        padding: 15px;
+    }
+}
+
 /* Felles Footer */
 footer {
     background: #1F2937;
@@ -1469,20 +1653,4 @@ footer {
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
-}
-/* Tilpasning */
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .search-box {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cards, .benefits, .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
 }
