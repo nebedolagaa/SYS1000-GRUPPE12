@@ -22,25 +22,19 @@
     </header>
     <div id="plasseringKN">
         <div class="logginn-containerKN">
-            <a class="logo-loginKN"><h1>HomeRentals</h1></a>
-            <h5>Logg inn på din brukerkonto</h5>
+            <h2>Glemt passord</h2>
 
+            <p>Har du glemt passordet ditt? Ingen problem!</p>
+            <p>Fyll inn mobillnummeret ditt nedenfor, så sender vi deg en kode for å tilbakestille passordet ditt.</p>
+            
             <form class="logginn-formKN">
-                <label for="mobilnummer"></label>
-                <input type="text" id="mobilnummer" placeholder="Mobilnummer" required>
-
-                <label for="passord"></label>
-                <input type="password" id="passord" placeholder="Passord" required>
-
-                <a href="glemtpassord.html" class="forgot-passwordKN">Glemt passord?</a>
-
-                <button type="submit" class="submit-btnKN">Fortsett</button>
-
-                <p class="registrer-linkKN"><a href="registrering.html">Har du ikke konto? Registrer deg</a></p>
+                <input type="mobilnummer" placeholder="+47 123 45 678" required>
+                <button class="send-btnKN" onclick="window.location.href='oppdater-passord.html'" >Send tilbakestillingslenke</button>
+                <div class="tips">
+                    <p>Har du fortsatt problemer? <a href="hjelpesenter.html">Kontakt brukerstøtte</a></p>
+                    </div>
             </form>
         </div>
-
     </div>
-
 </body>
 </html>
