@@ -1256,9 +1256,9 @@ nav a {
 /*Vilkaar side MB */
 .MB2-container {
     width: 80%;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .MB2-tittel {
@@ -1279,50 +1279,11 @@ nav a {
     margin-bottom: 15px;
 }
 
-@media (max-width: 600px) {
-    .MB2-container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .MB2-tittel {
-        font-size: 1.6rem;
-    }
-
-    .MB2-undertittel {
-        font-size: 1.3rem;
-        margin-top: 15px;
-    }
-
-    .MB2-tittel {
-        font-size: 0.9rem;
-    }
+.MB2-farge {
+    background-color: #F3F4F6;
+    min-height: 100vh;
 }
 
-@media (min-width: 601px) and (max-width: 900px) {
-    .MB2-container {
-        width: 85%;
-        padding: 20px;
-    }
-
-    .MB2-tittel {
-        font-size: 1.8rem;
-    }
-
-    .MB2-undertittel {
-        font-size: 1.4rem;
-    }
-
-    .MB2-tekst {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 901px) {
-    .MB2-container {
-        max-width: 800px;
-    }
-}
 /* Profile section */
 .CB-sidebar {
     width: 250px;
