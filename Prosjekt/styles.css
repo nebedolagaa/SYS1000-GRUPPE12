@@ -1411,7 +1411,7 @@ nav a {
     max-width: 970px;
     padding: 50px 20px;
     background: #fff;
-    min-height: 100vh;
+    height: auto;
     padding-left: 100px;
 }
 
@@ -1423,9 +1423,8 @@ nav a {
 
 .kontakt-form-ES {
     max-width: 985px;
-    background: rgba(177,15,15,0.67);
-    padding-right: 20px;
-    padding-bottom: 20px;
+
+    padding: 20px;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -1434,110 +1433,114 @@ nav a {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    background: rgba(177, 15, 15, 0.67);
+    padding: 0px 20px 20px 0px; /* Legger til padding på toppen, høyre, bunn og venstre */
 }
+
 
 .form-row-ES {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .form-group-ES {
-    flex: auto;
     display: flex;
     flex-direction: column;
-    align-items: left; 
-}
-
-.tekst-ES p{
-    text-decoration: none;
+    align-items: flex-start;
 }
 
 .kontakt-form-ES label {
-    margin-top: 10px; 
+    margin-top: 10px;
+    font-size: 16px;
     font-weight: bold;
     display: block;
-    text-align: left; 
+    text-align: left;
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
-.kontakt-form-ES input[type="text"] {
-    width: 200px;
-    height: 30px;
-    border: 1px solid #ccc;
-    background-color: #f8f8f8;
-    padding: 5px;
-}
-.kontakt-form-ES input[type="tel"]{
-    width: 320px;
-    height: 30px;
-    border: 1px solid #ccc;
-    background-color: #f8f8f8;
-    padding: 5px;
-}
-.kontakt-form-ES input[type="email"]
-{
-    width: 425px;
-    height: 30px;
-    border: 1px solid #ccc;
-    background-color: #f8f8f8;
-    padding: 5px;
-}
-
-#landkode {
-    width: 80px;
+.kontakt-form-ES input[type="text"],
+.kontakt-form-ES input[type="tel"],
+.kontakt-form-ES input[type="email"],
+#landkode,
+#problem {
+    width: 100%;
+    max-width: 500px;
     height: 40px;
     border: 1px solid #ccc;
     background-color: #f8f8f8;
     padding: 5px;
+    box-sizing: border-box;
 }
-
-#problem {
-    width: 440px;
-    height: 50px;
-    border: 1px solid #ccc;
-    background-color: #f8f8f8;
-    padding: 5px;
-}
-
 
 .kontakt-form-ES textarea {
     width: 100%;
+    min-height: 100px;
+    resize: vertical;
     padding: 8px;
     margin-top: 5px;
-    margin-bottom: 15px; 
+    margin-bottom: 0px;
     border: 1px solid #ccc;
     background-color: #f8f8f8;
     border-radius: 4px;
     box-sizing: border-box;
-    display: block;
-    text-align: left; 
 }
 
-.kontakt-form-ES textarea {
-    min-height: 150px;
-    min-width: 500px;
-    resize: vertical;
-}
-
-.submit-kontakt-ES button{
+.submit-kontakt-ES button {
     display: block;
     background: #1F2937;
     color: white;
     font-size: 16px;
-    width: 120px;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
     height: 50px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
-    margin-top: 10px;
-    margin-left: 180px;
+    margin: 30px auto 0px auto;
     text-align: center;
 }
 
-.submit-kontakt-ES button:hover{
+.submit-kontakt-ES button:hover {
     background: #4B5563;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .help-container-ES {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form-row-ES {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .kontakt-form-ES input[type="text"],
+    .kontakt-form-ES input[type="tel"],
+    .kontakt-form-ES input[type="email"],
+    #landkode,
+    #problem {
+        max-width: 100%;
+    }
+    .kontakt-form-ES textarea {
+        min-width: 100%;
+    }
+    .submit-kontakt-ES button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .help-container-ES {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .faq-ES {
+        font-size: 18px;
+    }
 }
 
 /*glemt-passord KN*/
