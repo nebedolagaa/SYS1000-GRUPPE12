@@ -1776,6 +1776,49 @@ nav a {
     }
 }
 
+/* Hovedinnhold - COB Personvern */
+main.COB-main {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 80px; /* Legger avstand mellom header og hovedinnhold */
+    display: block; /* Sikrer at innholdet vises som blokkelementer */
+}
+
+main .container {
+    display: block; /* Sørger for at innholdet plasseres under hverandre */
+}
+
+main h2.COB-h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main h3.COB-h3 {
+    font-size: 22px;
+    color: #B10F0F;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+main p.COB-p {
+    font-size: 16px;
+    color: #4B5563;
+    margin-bottom: 15px;
+}
+
+main ul.COB-ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+main ul.COB-ul li.COB-li {
+    font-size: 16px;
+    color: #4B5563;
+    margin-bottom: 10px;
+}
+
 /* Felles Footer */
 footer {
     background: #1F2937;
