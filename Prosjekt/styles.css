@@ -1280,46 +1280,46 @@ nav a {
 }
 
 @media (max-width: 600px) {
-    .MB-container {
+    .MB2-container {
         width: 90%;
         padding: 15px;
     }
 
-    .MB-title {
+    .MB2-tittel {
         font-size: 1.6rem;
     }
 
-    .MB-subtitle {
+    .MB2-undertittel {
         font-size: 1.3rem;
         margin-top: 15px;
     }
 
-    .MB-text {
+    .MB2-tittel {
         font-size: 0.9rem;
     }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-    .MB-container {
+    .MB2-container {
         width: 85%;
         padding: 20px;
     }
 
-    .MB-title {
+    .MB2-tittel {
         font-size: 1.8rem;
     }
 
-    .MB-subtitle {
+    .MB2-undertittel {
         font-size: 1.4rem;
     }
 
-    .MB-text {
+    .MB2-tekst {
         font-size: 1rem;
     }
 }
 
 @media (min-width: 901px) {
-    .MB-container {
+    .MB2-container {
         max-width: 800px;
     }
 }
