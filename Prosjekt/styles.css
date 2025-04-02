@@ -767,6 +767,15 @@ nav a {
     font-size: 15;
     margin-top: -5px;
 }
+@media (max-width: 767px) {
+ 
+    .logginn-containerKN {
+        width: 70%;
+        height: 100%;
+        text-align: center;
+        padding: 40px;
+    }
+}
 
 /*registrer deg side*/
 .body-registrationKN {
@@ -1834,7 +1843,7 @@ nav a {
 
 /*glemt-passord KN*/
 
-.logginn-containerKN h2 {
+.logginn-containerKN h3 {
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -1852,6 +1861,15 @@ nav a {
     width: 309px;
     height: 45px;
 }
+
+@media (max-width: 767px) {
+
+    .send-btnKN {
+        width: 90%;
+        height: 45px;
+    }
+}
+
 
 /* Om Oss side - NP */
 .omoss-main-NP {
