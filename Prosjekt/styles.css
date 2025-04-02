@@ -2058,11 +2058,12 @@ main.COB-main {
     justify-content: flex-start; /* Sørger for at innholdet starter fra toppen */
     align-items: center; /* Sentrerer horisontalt */
     width: 80%; /* Juster bredden etter behov */
-    height: calc(100vh - 200px); /* Justerer høyden for å ta hensyn til header og footer */
+    height: auto; /* Gjør at høyden tilpasser seg innholdet */
+    min-height: calc(100vh - 200px); /* Sørger for at boksen alltid har minst nok plass til skjermen */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Legger til en skygge for boks */
     border-radius: 10px; /* Runde hjørner */
     box-sizing: border-box; /* Inkluder padding i høyde/bredde */
-    overflow-y: auto; /* Sørger for at innholdet kan rulles vertikalt hvis det er for stort */
+    overflow: visible; /* Sørger for at innholdet ikke klippes */
 }
 
 main .container {
