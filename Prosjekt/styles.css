@@ -2050,10 +2050,19 @@ nav a {
 
 /* Hovedinnhold - COB Personvern */
 main.COB-main {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin-top: 80px; /* Legger avstand mellom header og hovedinnhold */
-    display: block; /* Sikrer at innholdet vises som blokkelementer */
+    padding: 40px 20px; /* Øker topp-padding for å gi mer plass til starten av teksten */
+    background-color: #ffffff; /* Hvit boks */
+    margin: 100px auto; /* Legger til margin over og under for å unngå overlapping */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Sørger for at innholdet starter fra toppen */
+    align-items: center; /* Sentrerer horisontalt */
+    width: 80%; /* Juster bredden etter behov */
+    height: calc(100vh - 200px); /* Justerer høyden for å ta hensyn til header og footer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Legger til en skygge for boks */
+    border-radius: 10px; /* Runde hjørner */
+    box-sizing: border-box; /* Inkluder padding i høyde/bredde */
+    overflow-y: auto; /* Sørger for at innholdet kan rulles vertikalt hvis det er for stort */
 }
 
 main .container {
