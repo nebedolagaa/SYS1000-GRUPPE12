@@ -7,11 +7,17 @@
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="body-registrationKN">
+<body>
     <header>
         <div class="container">
             <a class="logo" href="hjemmeside.html"><h1>HomeRentals</h1></a>
-            <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="leiebolig.html">Lei ut din bolig</a></li>
                     <li><a href="logginn.html">Logg inn</a></li>
@@ -24,33 +30,23 @@
         <div class="registration-containerKN">
             <a class="logo-loginKN"><h1>HomeRentals</h1></a>
             <h2>Registrer deg</h2>
-
             <form class="registrer-formKN">
                 <div class="left-sideKN">
                     <label for="fornavn">Fornavn:</label>
                     <input type="text" id="fornavn" placeholder="Fornavn" required>
-                    
                     <label for="mobilnummer">Mobilnummer:</label>
                     <input type="text" id="mobilnummer" placeholder="+4799999999" required>
-                
                     <label>Fødselsdato:</label>
                     <input type="date">
-
                 </div>
-                
                 <div class="right-sideKN">
                     <label for="etternavn">Etternavn:</label>
                     <input type="text" id="etternavn" placeholder="Etternavn" required>
-
-
                     <label for='epost'>Epost:</label>
                     <input type='email' id='epost' placeholder="myemail@gmail.com" required>
-
                     <label for="passord">Passord:</label>
                     <input type="password" id="passord" placeholder="Passord" required>
-
                 </div>
-                
             </form>
             <p class="hukKN">Huk av for utleier eller leietaker</p>
             <div class="radio-buttonKN">
@@ -64,13 +60,10 @@
             <label>
                 <input type="checkbox" value="vilkaar" required> Jeg godtar <a href="vilkaar.html">vilkårene og betingelsene</a>
             </label>
-            
             <div class="bottom-containerKN">
                 <button type="submit" class="submit-btnKN">Registrer</button>
             </div>
         </div>
-
     </div>
-    
 </body>
 </html>
