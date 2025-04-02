@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #F3F4F6;
 }
 
 .container {
@@ -2213,10 +2214,20 @@ nav a {
 
 /* Hovedinnhold - COB Personvern */
 main.COB-main {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin-top: 80px; /* Legger avstand mellom header og hovedinnhold */
-    display: block; /* Sikrer at innholdet vises som blokkelementer */
+    padding: 40px 20px; /* Øker topp-padding for å gi mer plass til starten av teksten */
+    background-color: #ffffff; /* Hvit boks */
+    margin: 100px auto; /* Legger til margin over og under for å unngå overlapping */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Sørger for at innholdet starter fra toppen */
+    align-items: center; /* Sentrerer horisontalt */
+    width: 80%; /* Juster bredden etter behov */
+    height: auto; /* Gjør at høyden tilpasser seg innholdet */
+    min-height: calc(100vh - 200px); /* Sørger for at boksen alltid har minst nok plass til skjermen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Legger til en skygge for boks */
+    border-radius: 10px; /* Runde hjørner */
+    box-sizing: border-box; /* Inkluder padding i høyde/bredde */
+    overflow: visible; /* Sørger for at innholdet ikke klippes */
 }
 
 main .container {
@@ -2231,7 +2242,7 @@ main h2.COB-h2 {
 
 main h3.COB-h3 {
     font-size: 22px;
-    color: #B10F0F;
+    color: #333;
     margin-top: 30px;
     margin-bottom: 10px;
 }
