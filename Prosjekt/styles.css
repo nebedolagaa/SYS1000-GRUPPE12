@@ -1483,14 +1483,18 @@ nav a {
 }
 
 .CB-sidebar .CB-signout {
-    display: block;
-    text-align: center;
-    background: #B10F0F;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
+    display: block; /* Gjør knappen til en blokk */
+    background-color: #B10F0F; /* Sett bakgrunnsfargen til rød */
+    color: white; /* Sett tekstfargen til hvit */
+    text-align: center; /* Sentrer teksten */
+    padding: 20px; /* Øk padding for større knapp */
+    margin: 20px auto; /* Legg til margin for avstand */
+    border-radius: 5px; /* Gjør hjørnene litt avrundet */
+    text-decoration: none; /* Fjern understrek fra teksten */
+    font-weight: bold; /* Gjør teksten fet */
+    font-size: 18px; /* Øk skriftstørrelsen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legg til en skygge for dybde */
+    width: 50%; /* Sett bredden til 50% av foreldreelementet */
 }
 
 .CB-profile-content {
