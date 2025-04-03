@@ -1504,12 +1504,13 @@ nav a {
 }
 
 .CB-info-section {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    text-align: left;
+    padding: 20px; /* Juster padding for innhold */
+    margin: 20px auto; /* Midtstill boksen med margin */
+    background-color: white; /* Sett bakgrunnsfargen til hvit */
+    border-radius: 10px; /* Myke kanter */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legg til en svak skygge */
+    border: 1px solid #ddd; /* Lys grense rundt boksen */
+    width: 100%; /* Gjør boksen bredere */
 }
 
 .CB-info-section h3 {
