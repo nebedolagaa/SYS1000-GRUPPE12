@@ -1345,7 +1345,7 @@ nav a {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .MB-image-showcase {
         max-width: 100%;
@@ -1361,40 +1361,31 @@ nav a {
         height: 70px;
     }
 
-    .MB-info-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .MB-info-boks, .MB-pris-og-kalender {
-        width: 100%;
-    }
-
-    .MB-pris-boks, .MB-kalender-boks {
-        width: 100%;
-    }
-
-    .MB-fasiliteter-boks {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+    @media (max-width: 768px) {
+        .MB-info-container {
+            flex-direction: column;
+        }
+        .MB-pris-og-kalender {
+            align-items: stretch;
+            max-width: none;
+        }
     }
 }
 
-@media screen and (max-width: 480px) {
-    .MB-fasiliteter-boks {
-        grid-template-columns: repeat(1, 1fr); 
+@media (max-width: 850px) and (min-width: 750px) {
+    .MB-info-container {
+        max-width: 700px; 
+        padding: 0 20px;
+        gap: 40px; 
     }
 
-    .MB-ikon-container {
-        flex-wrap: wrap;
-        gap: 20px;
+    .MB-pris-og-kalender {
+        align-items: center;
+        max-width: 250px;
     }
 
-    .MB-ikon-element {
-        width: 45%; 
-        text-align: center;
+    .MB-info-boks {
+        padding: 15px;
     }
 }
 
