@@ -1392,21 +1392,26 @@ nav a {
 /*Vilkaar side MB */
 .MB2-container {
     width: 80%;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 100px auto;
+    padding: 40px 20px;
     background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .MB2-tittel {
-    font-size: 2rem;
-    color: #000000;
-    text-align: center;
+    font-size: 28px;
+    color: #333;
+    text-align: left;
 }
 
 .MB2-undertittel {
-    font-size: 1.5rem;
-    color: #000000;
-    margin-top: 20px;
+    font-size: 22px;
+    color: #333;
+    margin-top: 30px;
 }
 
 .MB2-tekst {
