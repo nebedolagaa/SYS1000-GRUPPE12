@@ -270,7 +270,7 @@ nav a {
         width: 95%;
     }
     .why-choose, .benefits, .featured {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 }
@@ -317,6 +317,8 @@ nav a {
 .leie-buttons-NP {
     display: flex;
     justify-content: space-around;
+    width: 60%;
+    margin: auto;
 }
 
 .leiebolig-form-NP button {
@@ -326,6 +328,7 @@ nav a {
     border-radius: 7px;
     border: none;
     margin: 30px auto 0 auto;
+    font-size: 14px;
 }
 
 .leiebolig-form-NP a {
@@ -336,6 +339,7 @@ nav a {
     border-radius: 7px;
     border: none;
     margin: 30px auto 0 auto;
+    font-size: 14px;
 }
 
 .leiebolig-form-NP label {
@@ -346,17 +350,19 @@ nav a {
 .leiebolig-form-NP input {
     width: 95%;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #F3F4F6;
+    border-radius: 7px;
 }
 
 .leiebolig-form-NP textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #F3F4F6;
+    border-radius: 7px;
 }
 
 .opprettet-annonsen-NP p {
@@ -389,6 +395,16 @@ nav a {
 }
 
 @media (max-width: 480px) {
+    .steps-NP p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .leie-buttons-NP {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: 0 auto;
+    }    
     .rental-form-NP {
         width: 80%;
         margin: 20px auto;
@@ -438,8 +454,10 @@ nav a {
     width: 80%;
     padding: 10px;
     margin-top: 5px;
+    margin-left: 25px;
     border: 1px solid #ccc;
     border-radius: 7px;
+    background-color: #F3F4F6;
 }
 
 /* label */
@@ -447,6 +465,7 @@ nav a {
     display: block;
     margin-bottom: 6px;
     margin-top: 10px;
+    margin-left: 25px;
     font-weight: bold;
 }
 
@@ -460,13 +479,16 @@ nav a {
 .endre-form-NP textarea {
     resize: vertical;
     min-height: 10px;
+    border: 1px solid #ccc;
+    background-color: #F3F4F6;
+    border-radius: 7px;
 }
 
 .buttons-NP {
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
-    margin: 30px 350px 30px 350px;
+    width: 30%;
+    margin: auto;
 }
 
 .endre-form-NP button, .endre-form-NP a {
@@ -502,7 +524,7 @@ nav a {
     .endre-form-NP input[type="file"],
     .endre-form-NP textarea,
     .endre-form-NP select {
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -548,7 +570,7 @@ nav a {
     .endre-form-NP input[type="file"],
     .endre-form-NP textarea,
     .endre-form-NP select {
-        width: 95%;
+        width: 80%;
         padding: 8px;
     }
 }
