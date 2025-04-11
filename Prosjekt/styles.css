@@ -281,19 +281,21 @@ nav a {
     margin: 50px auto;
     padding: 20px;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-right: 15px solid rgba(177, 15, 15, 0.67);
+    border-bottom: 15px solid rgba(177, 15, 15, 0.67);
+    border-radius: 7px;
 }
 
 .rental-form-NP h1 {
     text-align: center;
     font-size: 24px;
+    margin-bottom:40px;
 }
 
 .steps-NP {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding: 0;
 }
 
@@ -329,6 +331,9 @@ nav a {
     border: none;
     margin: 30px auto 0 auto;
     font-size: 14px;
+}
+.leiebolig-form-NP button:hover {
+    background: #4B5563;
 }
 
 .leiebolig-form-NP a {
@@ -430,9 +435,11 @@ nav a {
     margin: 40px auto;
     padding: 30px;
     background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border-right: 15px solid rgba(177, 15, 15, 0.67);
+    border-bottom: 15px solid rgba(177, 15, 15, 0.67);
 }
+
 
 .endre-form-NP h1, .endre-form-NP h2 {
     text-align: center;
@@ -491,7 +498,7 @@ nav a {
     margin: auto;
 }
 
-.endre-form-NP button, .endre-form-NP a {
+.endre-form-NP button {
     background: #1F2937;
     color: white;
     padding: 10px 20px;
@@ -500,6 +507,23 @@ nav a {
     margin: 30px auto 0 auto;
     font-size: 16px;
     text-decoration: none;
+}
+.endre-form-NP button:hover {
+    background: #4B5563;
+}
+
+.endre-form-NP a {
+    background: #B10F0F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    margin: 30px auto 0 auto;
+    font-size: 16px;
+    text-decoration: none;
+}
+.endre-form-NP a:hover{
+    background: #930d0d;
 }
 
 /* Responsive Design for Endre/Slette bolig */
@@ -1453,6 +1477,7 @@ nav a {
     padding: 20px;
     background: white;
     border-right: 1px solid #ddd;
+    border-radius: 7px;
 }
 
 .CB-sidebar h2 {
@@ -1490,13 +1515,18 @@ nav a {
     text-align: center; /* Sentrer teksten */
     padding: 20px; /* Øk padding for større knapp */
     margin: 20px auto; /* Legg til margin for avstand */
-    border-radius: 5px; /* Gjør hjørnene litt avrundet */
+    border-radius: 7px; /* Gjør hjørnene litt avrundet */
     text-decoration: none; /* Fjern understrek fra teksten */
     font-weight: bold; /* Gjør teksten fet */
     font-size: 18px; /* Øk skriftstørrelsen */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legg til en skygge for dybde */
     width: 50%; /* Sett bredden til 50% av foreldreelementet */
 }
+
+.CB-signout:hover {
+    background: #930d0d;
+}
+
 
 .CB-profile-content {
     flex: 1;
@@ -1580,6 +1610,7 @@ nav a {
     border-right: 15px solid rgba(177, 15, 15, 0.67);
     border-bottom: 15px solid rgba(177, 15, 15, 0.67);
     margin: 30px;
+    border-radius: 7px;
 }
 
 .faq-ES {
@@ -1817,7 +1848,7 @@ nav a {
 .bestilling-send-btn-NP {
     display: block;
     text-align: center;
-    background: #B10F0F;
+    background: #1F2937;
     color: white;
     padding: 15px;
     border: none;
@@ -1831,7 +1862,7 @@ nav a {
 }
 
 .bestilling-send-btn-NP:hover {
-    background: #930d0d;
+    background: #4B5563;
 }
 
 .bestilling-vilkar-NP {
@@ -2047,6 +2078,9 @@ nav a {
     margin-bottom: 40px;
     width: 309px;
     height: 45px;
+}
+.send-btnKN:hover {
+    background: #4B5563;
 }
 
 @media (max-width: 767px) {
