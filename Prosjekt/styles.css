@@ -1076,7 +1076,7 @@ nav a {
     margin-top: 50px;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px; /* Moves the text closer to radio buttons */
+    margin-bottom: 20px; 
     text-align: center;
 }
 
@@ -1509,18 +1509,18 @@ nav a {
 }
 
 .CB-sidebar .CB-signout {
-    display: block; /* Gjør knappen til en blokk */
-    background-color: #B10F0F; /* Sett bakgrunnsfargen til rød */
-    color: white; /* Sett tekstfargen til hvit */
-    text-align: center; /* Sentrer teksten */
-    padding: 20px; /* Øk padding for større knapp */
-    margin: 20px auto; /* Legg til margin for avstand */
-    border-radius: 7px; /* Gjør hjørnene litt avrundet */
-    text-decoration: none; /* Fjern understrek fra teksten */
-    font-weight: bold; /* Gjør teksten fet */
-    font-size: 18px; /* Øk skriftstørrelsen */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legg til en skygge for dybde */
-    width: 50%; /* Sett bredden til 50% av foreldreelementet */
+    display: block; 
+    background-color: #B10F0F; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    margin: 20px auto; 
+    border-radius: 7px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 50%; 
 }
 
 .CB-signout:hover {
@@ -1539,13 +1539,13 @@ nav a {
 }
 
 .CB-info-section {
-    padding: 20px; /* Juster padding for innhold */
-    margin: 20px auto; /* Midtstill boksen med margin */
-    background-color: white; /* Sett bakgrunnsfargen til hvit */
-    border-radius: 10px; /* Myke kanter */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legg til en svak skygge */
-    border: 1px solid #ddd; /* Lys grense rundt boksen */
-    width: 100%; /* Gjør boksen bredere */
+    padding: 20px; 
+    margin: 20px auto; 
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ddd; 
+    width: 100%; 
 }
 
 .CB-info-section h3 {
@@ -2270,24 +2270,24 @@ nav a {
 
 /* Hovedinnhold - COB Personvern */
 main.COB-main {
-    padding: 40px 20px; /* Øker topp-padding for å gi mer plass til starten av teksten */
-    background-color: #ffffff; /* Hvit boks */
-    margin: 100px auto; /* Legger til margin over og under for å unngå overlapping */
+    padding: 40px 20px; 
+    background-color: #ffffff; 
+    margin: 100px auto; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Sørger for at innholdet starter fra toppen */
-    align-items: center; /* Sentrerer horisontalt */
-    width: 80%; /* Juster bredden etter behov */
-    height: auto; /* Gjør at høyden tilpasser seg innholdet */
-    min-height: calc(100vh - 200px); /* Sørger for at boksen alltid har minst nok plass til skjermen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Legger til en skygge for boks */
-    border-radius: 10px; /* Runde hjørner */
-    box-sizing: border-box; /* Inkluder padding i høyde/bredde */
-    overflow: visible; /* Sørger for at innholdet ikke klippes */
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 80%; 
+    height: auto; 
+    min-height: calc(100vh - 200px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    overflow: visible; 
 }
 
 main .container {
-    display: block; /* Sørger for at innholdet plasseres under hverandre */
+    display: block; 
 }
 
 main h2.COB-h2 {
