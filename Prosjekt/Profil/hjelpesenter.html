@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeRentals</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="hjemmeside.html"><h1>HomeRentals</h1></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="leiebolig.html">Lei ut din bolig</a></li>
+                    <li><a href="mineannonser.html">Mine annonser</a></li>
+                    <li><a href="profilside.html" class="register-btn">Min profil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form class="kontakt-form-ES">
+        <div class="help-container-ES">
+            <h1>Hjelpesenter</h1>
+            <div class="faq-ES">
+                <p>Har du behov for hjelp? Fyll ut kontaktskjemaet under, så vil vi kontakte deg så snart som mulig. Du kan også kontakte oss på telefon +47 123 45 678, eller send oss en e-post på: homerentals@gmail.com</p>
+            </div>
+            <div class="form-input-ES">
+                <h3>Kontaktskjema</h3>
+                    <label for="problem">Hvilket problem har du?</label>
+                    <select name="problem" id="problem">
+                        <option value="booking">Problemer med booking</option>
+                        <option value="betaling">Betalingsproblemer</option>
+                        <option value="bruker">Konto-relaterte problemer</option>
+                        <option value="annet">Andre problemer</option>
+                    </select>
+                <div class="form-row-ES">
+                    <div class="form-group-ES">
+                        <label for="navn">Fornavn</label>
+                        <input type="text" id="navn" name="navn" placeholder="Petter..." required>
+                    </div>
+                    <div class="form-group-ES">
+                        <label for="etternavn">Etternavn</label>
+                        <input type="text" id="etternavn" name="etternavn" placeholder="Pettersen..." required>
+                    </div>
+                </div>
+                <div class="form-row-ES">
+                    <div class="form-group-ES">
+                        <label for="landkode">Landskode</label>
+                        <select name="landkode" id="landkode">
+                            <option value="47">+47</option>
+                            <option value="46">+46</option>
+                            <option value="45">+45</option>
+                        </select>
+                    </div>
+                    <div class="form-group-ES">
+                        <label for="telefon">Telefonnummer</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="12345678..." required>
+                    </div>
+                </div>
+                <div class="form-group-ES">
+                    <label for="epost">E-post</label>
+                    <input type="email" id="epost" name="epost" placeholder="PetterPetterson@gmail.com..." required>
+                </div>
+                <div class="form-group-ES">
+                    <label for="melding">Skriv en utdypet forklaring på problemet</label>
+                    <textarea id="melding" name="melding" placeholder="Beskriv problemet ditt her..." required></textarea>
+                </div>
+            
+                <div class="submit-kontakt-ES">
+                    <button type="submit">Send inn</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h3>HomeRentals</h3>
+                <p>Din guide til de beste ferieopplevelsene i Norge.</p>
+            </div>
+            <div class="column">
+                <h3>Om oss</h3>
+                <ul>
+                    <li><a href="omoss.html">Om HomeRentals</a></li>
+                    <li><a href="karriere.html">Karriere</a></li>
+                    <li><a href="blogg.html">Blogg</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="hjelpesenter.html">Hjelpesenter</a></li>
+                    <li><a href="sikkerhet.html">Sikkerhet</a></li>
+                    <li><a href="avbestilling.html">Avbestilling</a></li>
+                    <li><a href="mailto:homerentals@gmail.com">Kontakt Oss</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Juridisk</h3>
+                <ul>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="vilkaar.html">Vilkår</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 HomeRentals. Alle rettigheter forbeholdt. Gruppe 12</p>
+    </footer>
+</body>
+</html>

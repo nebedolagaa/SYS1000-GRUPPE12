@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeRentals</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="hjemmeside.html"><h1>HomeRentals</h1></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="leiebolig.html">Lei ut din bolig</a></li>
+                    <li><a href="mineannonser.html">Mine annonser</a></li>
+                    <li><a href="profilside.html" class="register-btn">Min profil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="MB-image-showcase">
+        <input type="radio" name="slider" id="img1" checked>
+        <input type="radio" name="slider" id="img2">
+        <input type="radio" name="slider" id="img3">
+        <input type="radio" name="slider" id="img4">
+        
+        <div class="MB-hoved-bilde"> 
+            <img src="bilder/MBhytte1-1.jpg" class="MB-slide" id="slide1">
+            <img src="bilder/MBhytte1-2.jpg" class="MB-slide" id="slide2">
+            <img src="bilder/MBhytte1-3.jpg" class="MB-slide" id="slide3">
+            <img src="bilder/MBhytte1-4.jpg" class="MB-slide" id="slide4">
+        </div>
+        
+        <div class="MB-thumbnails">
+            <label for="img1"><img src="bilder/MBhytte1-1.jpg" class="MB-thumb"></label>
+            <label for="img2"><img src="bilder/MBhytte1-2.jpg" class="MB-thumb"></label>
+            <label for="img3"><img src="bilder/MBhytte1-3.jpg" class="MB-thumb"></label>
+            <label for="img4"><img src="bilder/MBhytte1-4.jpg" class="MB-thumb"></label>
+        </div>
+    </div>
+
+    <div class="MB-info-container">
+        <div class="MB-info-boks"> 
+            <h2>Moderne Hytte i Hemsedal</h2>
+            <div class="MB-ikon-container"> 
+                <div class="MB-ikon-element"> 
+                    <i class="fas fa-bed"></i>
+                    <span>5 soverom</span>
+                </div>
+                <div class="MB-ikon-element"> 
+                    <i class="fas fa-users"></i>
+                    <span>10 personer</span>
+                </div>
+                <div class="MB-ikon-element"> 
+                    <i class="fas fa-bath"></i>
+                    <span>3 Bad</span>
+                </div>
+                <div class="MB-ikon-element"> 
+                    <i class="fas fa-home"></i>
+                    <span>Hytte</span>
+                </div>
+            </div>
+            <p class="MB-adresse">Adresse: Hemsedalvegen 123, 3560 Hemsedal</p>
+            <p class="MB-beskrivelse">Denne moderne hytta i Hemsedal er perfekt for familier eller vennegrupper som ønsker en komfortabel base for ski- og fjellturer. Med sin sentrale beliggenhet og alle fasiliteter, gir den deg en luksuriøs fjellopplevelse.</p> 
+            <p class="MB-beskrivelse">Hytten har høy standard og mange fine detaljer. Hytten inneholder det meste du måtte ha behov for. Alt av det du behøver av kjøkkenutstyr er tilgjengelig: Olje, krydder, såpe, kluter, kjøkkenhåndklær osv.</p> 
+            <div class="MB-bruker-info"> 
+                <i class="fas fa-user"></i>
+                <p class="MB-bruker-navn">Einar Hansen</p> 
+            </div>
+        </div>
+    
+        <div class="MB-pris-og-kalender">
+            <div class="MB-pris-boks">
+                <p>Pris</p>
+                <h2>kr 3000/natt</h2>
+                <a href="booking-1.html">Reserver</a>
+            </div>
+        
+            <div class="MB-kalender-boks">
+                <p class="MB-kalender-tittel">Velg dato:</p>
+                <div class="MB-kalender-rad">
+                    <label for="start-dato" class="MB-kalender-label">Fra dato:</label>
+                    <input type="date" id="start-dato" class="kalender-input">
+                </div>
+                <div class="MB-kalender-rad">
+                    <label for="slutt-dato" class="MB-kalender-label">Til dato:</label>
+                    <input type="date" id="slutt-dato" class="kalender-input">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="MB-fasiliteter-info"> 
+        <h2>Fasiliteter:</h2>
+        <div class="MB-fasiliteter-boks"> 
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-hot-tub"></i>
+                <p>Boblebad</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-utensils"></i>
+                <p>Grill</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-fire"></i>
+                <p>Peis</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-tshirt"></i>
+                <p>Vaskemaskin</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-parking"></i>
+                <p>Parkering</p>
+            </div>
+            <div class="MB-fasilitet-element"> 
+                <i class="fas fa-wifi"></i>
+                <p>WiFi</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h3>HomeRentals</h3>
+                <p>Din guide til de beste ferieopplevelsene i Norge.</p>
+            </div>
+            <div class="column">
+                <h3>Om oss</h3>
+                <ul>
+                    <li><a href="omoss.html">Om HomeRentals</a></li>
+                    <li><a href="karriere.html">Karriere</a></li>
+                    <li><a href="blogg.html">Blogg</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="hjelpesenter.html">Hjelpesenter</a></li>
+                    <li><a href="sikkerhet.html">Sikkerhet</a></li>
+                    <li><a href="avbestilling.html">Avbestilling</a></li>
+                    <li><a href="mailto:homerentals@gmail.com">Kontakt Oss</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Juridisk</h3>
+                <ul>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="vilkaar.html">Vilkår</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 HomeRentals. Alle rettigheter forbeholdt. Gruppe 12</p>
+    </footer>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    let startDato = document.getElementById("start-dato");
+    let sluttDato = document.getElementById("slutt-dato");
+
+    let today = new Date().toISOString().split("T")[0];
+    startDato.setAttribute("min", today);
+    sluttDato.setAttribute("min", today);
+
+    startDato.addEventListener("change", function () {
+        if (startDato.value && sluttDato.value && startDato.value > sluttDato.value) {
+            alert("Startdato kan ikke være etter sluttdato.");
+        } else {
+            alert("Startdato valgt: " + startDato.value);
+        }
+    });
+
+    sluttDato.addEventListener("change", function () {
+        if (startDato.value && sluttDato.value && startDato.value > sluttDato.value) {
+            alert("Startdato kan ikke være etter sluttdato.");
+        } else {
+            alert("Sluttdato valgt: " + sluttDato.value);
+        }
+    });
+});
+    </script>
+</body>
+</html>

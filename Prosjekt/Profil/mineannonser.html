@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Annonser - HomeRentals</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="hjemmeside.html"><h1>HomeRentals</h1></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="leiebolig.html">Lei ut din bolig</a></li>
+                    <li><a href="mineannonser.html">Mine annonser</a></li>
+                    <li><a href="profilside.html" class="register-btn">Min profil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="NP-annonser-container">
+        <div class="NP-annonser-header">
+            <h2>Mine Annonser</h2>
+            <p>Administrer og holde oversikt over dine boligannonser</p>
+        </div>
+        
+        <div class="NP-filter-section">
+            <div class="NP-filter-controls">
+                <div class="NP-filter-group">
+                    <select class="NP-select">
+                        <option value="nyeste">Sorter etter: Nyeste først</option>
+                        <option value="eldste">Sorter etter: Eldste først</option>
+                        <option value="pris-hoy-lav">Pris: Høy til lav</option>
+                        <option value="pris-lav-hoy">Pris: Lav til høy</option>
+                    </select>
+                </div>
+                <div class="NP-filter-group">
+                    <select class="NP-select">
+                        <option value="alle">Vis alle annonser</option>
+                        <option value="aktive">Bare aktive annonser</option>
+                        <option value="utleide">Bare utleide annonser</option>
+                        <option value="inaktive">Bare inaktive annonser</option>
+                    </select>
+                </div>
+                <a href="leiebolig.html" class="NP-add-listing-btn">
+                    <i class="fas fa-plus-circle"></i> Legg til ny
+                </a>
+            </div>
+            
+            <div class="NP-listings-stats">
+                <h3>Du har 4 annonser</h3>
+                <span>Sist oppdatert: 17. april 2025</span>
+            </div>
+        </div>
+        
+        <div class="NP-listings-container">
+            <div class="NP-listing-card">
+                <div class="NP-listing-image">
+                    <img src="Bilder/hytte1.jpg" alt="Moderne Hytte i Hemsedal">
+                    <span class="NP-status NP-status-active">Aktiv</span>
+                </div>
+                <div class="NP-listing-details">
+                    <a href="hytte1.html"><h3>Moderne Hytte i Hemsedal</h3></a>
+                    <p class="NP-listing-info">Hus • Plass til 10 personer • 5 soverom • 3 bad</p>
+                    <div class="NP-listing-footer">
+                        <p class="NP-price">3 000 kr per natt</p>
+                        <div class="NP-listing-actions">
+                            <a href="endre-slette-annonsen.html" class="NP-edit-btn">
+                                <i class="fas fa-edit"></i> Endre
+                            </a>
+                            <a href="#" class="NP-delete-btn">
+                                <i class="fas fa-trash-alt"></i> Slett
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="NP-listing-card">
+                <div class="NP-listing-image">
+                    <img src="Bilder/hytte2.jpg" alt="Koselig Tømmerhytte ved Geilo">
+                    <span class="NP-status NP-status-rented">Utleid</span>
+                </div>
+                <div class="NP-listing-details">
+                    <a href="hytte2.html"><h3>Koselig Tømmerhytte ved Geilo</h3></a>
+                    <p class="NP-listing-info">Hus • Plass til 8 personer • 4 soverom • 2 bad</p>
+                    <div class="NP-listing-footer">
+                        <p class="NP-price">2 500 kr per natt</p>
+                        <div class="NP-listing-actions">
+                            <a href="endre-slette-annonsen.html" class="NP-edit-btn">
+                                <i class="fas fa-edit"></i> Endre
+                            </a>
+                            <a href="#" class="NP-delete-btn">
+                                <i class="fas fa-trash-alt"></i> Slett
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="NP-listing-card">
+                <div class="NP-listing-image">
+                    <img src="Bilder/hytte3.jpg" alt="Luksushytte ved Norefjell">
+                    <span class="NP-status NP-status-active">Aktiv</span>
+                </div>
+                <div class="NP-listing-details">
+                    <a href="hytte3.html"><h3>Luksushytte ved Norefjell</h3></a>
+                    <p class="NP-listing-info">Hus • Plass til 12 personer • 5 soverom • 3 bad</p>
+                    <div class="NP-listing-footer">
+                        <p class="NP-price">3 500 kr per natt</p>
+                        <div class="NP-listing-actions">
+                            <a href="endre-slette-annonsen.html" class="NP-edit-btn">
+                                <i class="fas fa-edit"></i> Endre
+                            </a>
+                            <a href="#" class="NP-delete-btn">
+                                <i class="fas fa-trash-alt"></i> Slett
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="NP-listing-card">
+                <div class="NP-listing-image">
+                    <img src="Bilder/MBhytte4-1.jpg" alt="Tradisjonell Hytte ved Røros">
+                    <span class="NP-status NP-status-inactive">Inaktiv</span>
+                </div>
+                <div class="NP-listing-details">
+                    <a href="hytte4.html"><h3>Tradisjonell Hytte ved Røros</h3></a>
+                    <p class="NP-listing-info">Hus • Plass til 6 personer • 3 soverom • 1 bad</p>
+                    <div class="NP-listing-footer">
+                        <p class="NP-price">1 500kr per natt</p>
+                        <div class="NP-listing-actions">
+                            <a href="endre-slette-annonsen.html" class="NP-edit-btn">
+                                <i class="fas fa-edit"></i> Endre
+                            </a>
+                            <a href="#" class="NP-delete-btn">
+                                <i class="fas fa-trash-alt"></i> Slett
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="NP-help-section">
+            <div class="NP-help-content">
+                <i class="fas fa-question-circle"></i>
+                <p>Trenger du hjelp med dine annonser? <a href="hjelpesenter.html">Besøk vårt hjelpesenter</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h3>HomeRentals</h3>
+                <p>Din guide til de beste ferieopplevelsene i Norge.</p>
+            </div>
+            <div class="column">
+                <h3>Om oss</h3>
+                <ul>
+                    <li><a href="omoss.html">Om HomeRentals</a></li>
+                    <li><a href="karriere.html">Karriere</a></li>
+                    <li><a href="blogg.html">Blogg</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="hjelpesenter.html">Hjelpesenter</a></li>
+                    <li><a href="sikkerhet.html">Sikkerhet</a></li>
+                    <li><a href="avbestilling.html">Avbestilling</a></li>
+                    <li><a href="mailto:homerentals@gmail.com">Kontakt Oss</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Juridisk</h3>
+                <ul>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="vilkaar.html">Vilkår</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 HomeRentals. Alle rettigheter forbeholdt. Gruppe 12</p> 
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const deleteButtons = document.querySelectorAll('.NP-delete-btn');
+            deleteButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    if (confirm('Er du sikker på at du vil slette denne annonsen? Dette kan ikke angres.')) {
+                        alert('Annonsen er slettet!');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

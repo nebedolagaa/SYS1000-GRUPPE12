@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeRentals</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="hjemmeside.html"><h1>HomeRentals</h1></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="leiebolig.html">Lei ut din bolig</a></li>
+                    <li><a href="logginn.html">Logg inn</a></li>
+                    <li><a href="registrering.html" class="register-btn">Registrer deg</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="plasseringKN">
+        <div class="logginn-containerKN">
+            <h3>Glemt passord</h3>
+
+            <p>Har du glemt passordet ditt? Ingen problem!</p>
+            <p>Fyll inn mobillnummeret ditt nedenfor, så sender vi deg en kode for å tilbakestille passordet ditt.</p>
+            
+            <form class="logginn-formKN">
+                <input type="mobilnummer" placeholder="+47 123 45 678" required>
+                <button class="send-btnKN" onclick="window.location.href='oppdater-passord.html'" >Send tilbakestillingslenke</button>
+                <div class="tips">
+                    <p>Har du fortsatt problemer? <a href="hjelpesenter.html">Kontakt brukerstøtte</a></p>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

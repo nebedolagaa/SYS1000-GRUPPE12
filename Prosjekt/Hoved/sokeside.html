@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeRentals</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="hjemmeside.html"><h1>HomeRentals</h1></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="leiebolig.html">Lei ut din bolig</a></li>
+                    <li><a href="logginn.html">Logg inn</a></li>
+                    <li><a href="registrering.html" class="register-btn">Registrer deg</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="JF-container">
+        <div class="JF-search-bar">
+            <div class="JF-search-input">
+                <label for="location">Hvor går reisen?</label>
+                <input type="text" id="location" placeholder="Skriv inn sted">
+            </div>
+            <div class="JF-date-input">
+                <div class="JF-date-wrapper">
+                    <label for="start-date">Startdato</label>
+                    <input type="date" id="start-date" name="start-date">
+                </div>
+                <div class="JF-date-wrapper">
+                    <label for="end-date">Sluttdato</label>
+                    <input type="date" id="end-date" name="end-date">
+                </div>
+            </div>
+        </div>
+        <div class="JF-fasiliteter">
+            <select class="JF-fasiliteter-select">
+                <option value="popularitet">Populæritet</option>
+                <option value="lav-hoy">Lav til høy</option>
+                <option value="hoy-lav">Høy til lav</option>
+            </select>
+            <select class="JF-filter-select">
+                <option value="pris">Pris</option>
+                <option value="under-2000">Under 2000 kr</option>
+                <option value="2000-5000">2000 kr - 5000 kr</option>
+                <option value="over-5000">Over 5000 kr</option>
+            </select>
+            <select class="JF-filter-select">
+                <option value="rom">Rom og område</option>
+                <option value="1-2">1-2 rom</option>
+                <option value="3-4">3-4 rom</option>
+                <option value="5+">5+ rom</option>
+            </select>
+            <select class="JF-search-select">
+                <option value="anbefalt">Sorter etter anbefalt</option>
+                <option value="avstand">Sorter etter avstand</option>
+                <option value="pris">Sorter etter pris</option>
+            </select>
+            <button class="JF-fasiliteter-btn">☑ Fasiliteter</button>
+            <div class="JF-fasiliteter-options" id="fasiliteterOptions">
+                <label><input type="checkbox" name="fasilitet" value="hus"> Kjøkken</label>
+                <label><input type="checkbox" name="fasilitet" value="strand"> Vaskemaskin</label>
+                <label><input type="checkbox" name="fasilitet" value="leilighet"> Grill</label>
+                <label><input type="checkbox" name="fasilitet" value="parkering"> Parkering</label>
+                <label><input type="checkbox" name="fasilitet" value="basseng"> Basseng</label>
+            </div>
+        </div>
+        <button class="JF-search-btn">Søk</button>
+    </div>
+    <div class="JF-listing_iframe">
+        <div class="JF-listings">
+            <a href="hytte1.html" class="JF-listing-link">
+                <div>
+                    <img src="Bilder/hytte1.jpg" alt="Moderne Hytte i Hemsedal">
+                    <div>
+                        <h3>Moderne Hytte i Hemsedal</h3>
+                        <p>Hus • Plass til 10 personer • 5 soverom • 3 bad</p>
+                        <p class="price">3 000kr per natt</p>
+                    </div>
+                </div>
+            </a>
+            <a href="hytte2.html" class="JF-listing-link">
+                <div>
+                    <img src="Bilder/hytte2.jpg" alt="Koselig Tømmerhytte ved Geilo">
+                    <div>
+                        <h3>Koselig Tømmerhytte ved Geilo</h3>
+                        <p>Hus • Plass til 8 personer • 4 soverom • 2 bad</p>
+                        <p class="price">2 500kr per natt</p>
+                    </div>
+                </div>
+            </a>
+            <a href="hytte3.html" class="JF-listing-link">
+                <div>
+                    <img src="Bilder/hytte3.jpg" alt="Luksushytte ved Norefjell">
+                    <div>
+                        <h3>Luksushytte ved Norefjell</h3>
+                        <p>Hus • Plass til 12 personer • 5 soverom • 3 bad</p>
+                        <p class="price">3 500kr per natt</p>
+                    </div>
+                </div>
+            </a>
+            <a href="hytte4.html" class="JF-listing-link">
+                <div>
+                    <img src="Bilder/MBhytte4-1.jpg" alt="Hytte 4">
+                    <div>
+                        <h3>Tradisjonell Hytte ved Røros</h3>
+                        <p>Hus • Plass til 6 personer • 3 soverom • 1 bad</p>
+                        <p class="price">1 500kr per natt</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.246714247095!2d10.26638884754639!3d60.15385879943066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464107164b7bdf45%3A0x51b972d1b787785b!2sUniversitetet%20i%20S%C3%B8r%C3%B8st-Norge%20%E2%80%93%20campus%20Ringerike!5e0!3m2!1sno!2sno!4v1741603601777!5m2!1sno!2sno" class="JF-iframe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h3>HomeRentals</h3>
+                <p>Din guide til de beste ferieopplevelsene i Norge.</p>
+            </div>
+            <div class="column">
+                <h3>Om oss</h3>
+                <ul>
+                    <li><a href="omoss.html">Om HomeRentals</a></li>
+                    <li><a href="karriere.html">Karriere</a></li>
+                    <li><a href="blogg.html">Blogg</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="hjelpesenter.html">Hjelpesenter</a></li>
+                    <li><a href="sikkerhet.html">Sikkerhet</a></li>
+                    <li><a href="avbestilling.html">Avbestilling</a></li>
+                    <li><a href="mailto:homerentals@gmail.com">Kontakt Oss</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Juridisk</h3>
+                <ul>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="vilkaar.html">Vilkår</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 HomeRentals. Alle rettigheter forbeholdt. Gruppe 12</p> 
+    </footer>
+    <script>
+        document.querySelector('.JF-fasiliteter-btn').addEventListener('click', function() {
+            const options = document.getElementById('fasiliteterOptions');
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
