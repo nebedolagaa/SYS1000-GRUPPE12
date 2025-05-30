@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeRentals - Rediger Profil</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .CB-form-group {
+            margin-bottom: 1.5rem;
+        }
+        .CB-form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        .CB-form-group input,
+        .CB-form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+        .CB-form-group input:focus,
+        .CB-form-group select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+        }
+        .CB-form-group input[readonly] {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            cursor: not-allowed;
+        }
+        .CB-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .CB-form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e9ecef;
+        }
+        .CB-btn {
+            padding: 0.875rem 1.75rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            min-width: 140px;
+            justify-content: center;
+        }
+        .CB-btn-primary {
+            background-color: #007bff;
+            color: white;
+            border: 2px solid #007bff;
+        }
+        .CB-btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+        .CB-btn-secondary {
+            background-color: #fff;
+            color: #6c757d;
+            border: 2px solid #6c757d;
+        }
+        .CB-btn-secondary:hover {
+            background-color: #6c757d;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2);
+        }
+        .CB-checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 0.25rem;
+        }
+        .CB-checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+            transform: scale(1.2);
+        }
+        .CB-checkbox-group label {
+            margin-bottom: 0;
+            cursor: pointer;
+            font-weight: 400;
+        }
+        .CB-info-section {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .CB-info-section h3 {
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            font-size: 1.25rem;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.75rem;
+        }
+        
+        @media (max-width: 768px) {
+            .CB-info-section {
+                width: 90%;
+            }
+            .CB-info-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .CB-form-actions {
+                flex-direction: column;
+            }
+            .CB-btn {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="hjemmeside.html"><h1>HomeRentals</h1></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="leiebolig.html">Lei ut din bolig</a></li>
+                    <li><a href="mineannonser.html">Mine annonser</a></li>
+                    <li><a href="profilside.html" class="register-btn">Min profil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="CB-profile-container">
+        <aside class="CB-sidebar">
+            <div class="CB-user-header">
+                <div class="CB-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h2>Hei, Christoffer!</h2>
+                <p class="CB-email">christofferberg77@gmail.com</p>
+            </div>
+            <a href="../Hoved/hjemmeside.html" class="CB-signout"><i class="fas fa-sign-out-alt"></i> Logg ut</a>
+        </aside>
+
+        <main class="CB-profile-content">
+            <h2>Rediger Profil</h2>
+
+            <form>
+                <section class="CB-info-section">
+                    <h3>Generell informasjon</h3>
+                    <div class="CB-info-grid">
+                        <div class="CB-form-group">
+                            <label for="fullName">Fullt navn:</label>
+                            <input type="text" id="fullName" name="fullName" value="Christoffer Berg">
+                        </div>
+                        <div class="CB-form-group">
+                            <label for="birthDate">Fødselsdato:</label>
+                            <input type="date" id="birthDate" name="birthDate">
+                        </div>
+                        <div class="CB-form-group">
+                            <label for="registrationDate">Registreringsdato:</label>
+                            <input type="date" id="registrationDate" name="registrationDate" value="2025-04-15" readonly>
+                        </div>
+                        <div class="CB-form-group">
+                            <label for="cardNumber">Betalingskortnr (siste 4 siffer):</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234" maxlength="4">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="CB-info-section">
+                    <h3>Kontaktinformasjon</h3>
+                    <div class="CB-info-grid">
+                        <div class="CB-form-group">
+                            <label for="phoneNumber">Mobilnummer:</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+47 123 45 678">
+                        </div>
+                        <div class="CB-form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" value="christofferberg77@gmail.com">
+                        </div>
+                        <div class="CB-form-group">
+                            <label for="address">Adresse:</label>
+                            <input type="text" id="address" name="address" placeholder="Gateadresse, postnummer, by">
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="CB-info-section">
+                    <h3>Sikkerhet</h3>
+                    <div class="CB-info-grid">
+                        <div class="CB-form-group">
+                            <label for="currentPassword">Nåværende passord:</label>
+                            <input type="password" id="currentPassword" name="currentPassword" placeholder="Skriv inn nåværende passord">
+                        </div>
+                        <div class="CB-form-group">
+                            <label for="newPassword">Nytt passord:</label>
+                            <input type="password" id="newPassword" name="newPassword" placeholder="La stå tom hvis du ikke vil endre">
+                        </div>
+                        <div class="CB-form-group">
+                            <label for="confirmPassword">Bekreft nytt passord:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Bekreft nytt passord">
+                        </div>
+                        <div class="CB-form-group">
+                            <div class="CB-checkbox-group">
+                                <input type="checkbox" id="twoFactor" name="twoFactor">
+                                <label for="twoFactor">Aktiver to-faktor autentisering</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="CB-form-actions">
+                    <a href="profilside.html" class="CB-btn CB-btn-primary">
+                        <i class="fas fa-save"></i> Lagre endringer
+                    </a>
+                    <a href="profilside.html" class="CB-btn CB-btn-secondary">
+                        <i class="fas fa-times"></i> Avbryt
+                    </a>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h3>HomeRentals</h3>
+                <p>Din guide til de beste ferieopplevelsene i Norge.</p>
+            </div>
+            <div class="column">
+                <h3>Om oss</h3>
+                <ul>
+                    <li><a href="omoss.html">Om HomeRentals</a></li>
+                    <li><a href="karriere.html">Karriere</a></li>
+                    <li><a href="blogg.html">Blogg</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="hjelpesenter.html">Hjelpesenter</a></li>
+                    <li><a href="sikkerhet.html">Sikkerhet</a></li>
+                    <li><a href="avbestilling.html">Avbestilling</a></li>
+                    <li><a href="mailto:homerentals@gmail.com">Kontakt Oss</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Juridisk</h3>
+                <ul>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="vilkaar.html">Vilkår</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 HomeRentals. Alle rettigheter forbeholdt. Gruppe 12</p>
+    </footer>
+</body>
+</html>
