@@ -1,53 +1,60 @@
-# SYS1000-GRUPPE12
+SYS1000-GRUPPE12
 
-Her skal vi jobbe med vår prosjekt på SYS1000 (evt andre prosjekter)
+Velkommen til prosjektets GitHub-repositorium for SYS1000-GRUPPE12!
 
-🛠 Regler for arbeid i repository
+📄 Prosjektbeskrivelse
 
-For at vi skal jobbe ryddig og unngå feil, la oss følge disse reglene:
+Dette repositoriet inneholder filer og kildekode for et prosjekt utviklet som en del av SYS1000-kurset. Hovednettstedet for prosjektet finnes i følgende sti:
 
-1️⃣ Jobb i egne branches
-	•	Ikke gjør endringer direkte i main
-	•	Før du starter, lag en egen branch, for eksempel:
-        
-        git checkout -b feature-nav-menu
+Prosjekt/Hoved/hjemmeside.html
 
-(hvor feature-nav-menu er navnet på branchen, beskrivende for hva du legger til)
+🌐 Hvordan bruke nettsiden
 
-  •	Etter endringer, push til din branch:
+For å åpne nettsiden lokalt, følg disse trinnene:
+	1.	Klon repositoriet:
 
-        git add .
-        git commit -m "La til navigasjonsmeny"
-        git push origin feature-nav-menu
+git clone https://github.com/nebedolagaa/SYS1000-GRUPPE12.git
 
-2️⃣ Bruk Pull Requests (PR)
-	•	Når du er ferdig med en oppgave, ikke merge direkte til main, men opprett en Pull Request (PR)
-	•	Jeg eller andre teammedlemmer vil gjennomgå endringene
-	•	Etter godkjenning merges PR-en til main
 
-3️⃣ Oppdater koden før du starter arbeid
+	2.	Naviger til prosjektmappen:
 
-Før du begynner på noe nytt, sørg for at du har **siste versjon** av prosjektet:
+cd SYS1000-GRUPPE12/Prosjekt/Hoved
 
-        git checkout main  
-        git pull origin main  
-        git checkout feature-nav-menu  
-        git merge main
- 
-  Dette hjelper deg med å unngå konflikter.
-  
-4️⃣ Hold koden ren og forståelig
-	•	Legg til kommentarer der det trengs
-	•	Gi meningsfulle commit-meldinger, for eksempel:
-✅ La til styling for knapper
-❌ Update
 
-5️⃣ Hvis noe går galt – ingen panikk
-	•	Du kan alltid tilbakestille endringer:
+	3.	Åpne hjemmeside.html i nettleseren:
+	•	Dobbeltklikk på hjemmeside.html for å åpne siden i din nettleser.
+	•	Alternativt kan du starte en lokal server og gå til http://localhost:PORT/hjemmeside.html, der PORT er portnummeret du bruker.
 
-        git reset --hard
-        git clean -df
+🛠️ Prosjektstruktur
+	•	Prosjekt/Hoved/hjemmeside.html – Hovedsiden for nettstedet.
+	•	Prosjekt/Hoved/ – Inneholder HTML-, CSS- og JavaScript-filer.
+	•	.vscode/ – Konfigurasjonsfiler for Visual Studio Code.
+	•	README.md – Denne veiledningen og prosjektbeskrivelsen.
 
-•	Hvis du er usikker på noe, spør i chatten, så hjelper jeg!
+👥 Bidra til prosjektet
 
-Mvh, Nikita
+Dersom du ønsker å bidra med forbedringer eller nye funksjoner:
+	1.	Lag en ny gren:
+
+git checkout -b feature/navn-på-funksjon
+
+
+	2.	Gjør endringer og lagre dem:
+
+git add .
+git commit -m "La til ny funksjon"
+
+
+	3.	Push grenen til GitHub:
+
+git push origin feature/navn-på-funksjon
+
+
+	4.	Lag en Pull Request:
+	•	Gå til prosjektets GitHub-side.
+	•	Klikk på “Compare & pull request”.
+	•	Skriv en kort beskrivelse og send forespørselen.
+
+📬 Kontakt og tilbakemelding
+
+Har du spørsmål eller forslag? Lag gjerne en Issue i repositoriet.
