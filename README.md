@@ -1,60 +1,92 @@
-SYS1000-GRUPPE12
+# HomeRentals 🏡
 
-Velkommen til prosjektets GitHub-repositorium for SYS1000-GRUPPE12!
+HomeRentals is a website for renting cabins and holiday homes in Norway. We made it in the course SYS1000 in spring 2025 (Feb to May), and it was the **first project we ever did together as a group**.
 
-📄 Prosjektbeskrivelse
+At that point most of us had just started learning HTML and CSS, so this project is really us learning the basics: how to build a layout, style forms, make a navbar, link pages together and work in the same Git repo without breaking each other's stuff. It's a school project and a pretty early one, so please don't judge the code too hard 😅
 
-Dette repositoriet inneholder filer og kildekode for et prosjekt utviklet som en del av SYS1000-kurset. Hovednettstedet for prosjektet finnes i følgende sti:
+Everything is plain HTML and CSS (plus a tiny bit of JavaScript). There is no backend, so the forms, login and payment don't actually do anything. It's a clickable prototype of how the site would look and work.
 
-Prosjekt/Hoved/hjemmeside.html
+![Home page](docs/screenshots/home.jpg)
 
-🌐 Hvordan bruke nettsiden
+## Screenshots
 
-For å åpne nettsiden lokalt, følg disse trinnene:
-	1.	Klon repositoriet:
+### Search
+Search for a place and dates, filter and sort the results.
 
+![Search](docs/screenshots/search.jpg)
+
+### Cabin page
+Pictures, description, facilities, price and date picker.
+
+![Cabin page](docs/screenshots/cabin.jpg)
+
+### Booking
+Booking is split into steps. First your contact info, then payment, with a summary of the stay on the right.
+
+![Booking](docs/screenshots/booking.jpg)
+
+![Payment](docs/screenshots/payment.jpg)
+
+### Rent out your home
+A three-step form for hosts who want to list their cabin.
+
+![Rent out your home](docs/screenshots/rent_out.jpg)
+
+### My listings
+When you're logged in as a host you can see, edit and delete your listings.
+
+![My listings](docs/screenshots/my_listings.jpg)
+
+### Profile
+
+![Profile](docs/screenshots/profile.jpg)
+
+The user in the screenshots is made up.
+
+## What's in the project
+
+- Home page with search and featured cabins
+- Search page with filters, and a page for each cabin
+- Booking and payment flow in several steps
+- Register, log in and forgot password pages
+- "Rent out your home" form and a page for managing your listings
+- Profile page where you can edit your info
+- Info pages: about us, blog, career, help center, privacy, terms, cookies
+
+## How to open it
+
+No installation needed. Clone the repo and open the home page in your browser:
+
+```bash
 git clone https://github.com/nebedolagaa/SYS1000-GRUPPE12.git
-
-
-	2.	Naviger til prosjektmappen:
-
 cd SYS1000-GRUPPE12/Prosjekt/Hoved
+open hjemmeside.html        # or just double-click the file
+```
 
+## Project structure
 
-	3.	Åpne hjemmeside.html i nettleseren:
-	•	Dobbeltklikk på hjemmeside.html for å åpne siden i din nettleser.
-	•	Alternativt kan du starte en lokal server og gå til http://localhost:PORT/hjemmeside.html, der PORT er portnummeret du bruker.
+```text
+Prosjekt/
+├── Hoved/    the site as a visitor sees it (not logged in)
+└── Profil/   the same site when you're logged in (profile, my listings, edit listing)
+```
 
-🛠️ Prosjektstruktur
-	•	Prosjekt/Hoved/hjemmeside.html – Hovedsiden for nettstedet.
-	•	Prosjekt/Hoved/ – Inneholder HTML-, CSS- og JavaScript-filer.
-	•	.vscode/ – Konfigurasjonsfiler for Visual Studio Code.
-	•	README.md – Denne veiledningen og prosjektbeskrivelsen.
+Each folder has its own HTML pages, `styles.css`, images (`Bilder/`) and favicons. We didn't know about templates or components yet, so the navbar and footer are copied into every page. That's one of the things we'd do very differently now.
 
-👥 Bidra til prosjektet
+## What we learned
 
-Dersom du ønsker å bidra med forbedringer eller nye funksjoner:
-	1.	Lag en ny gren:
+- The basics of HTML and CSS: layouts with flexbox and grid, forms, cards, navbars
+- Splitting a website into pages and linking them together
+- Working in the same Git repo as a team for the first time (and merging each other's changes for the first time)
+- That copying the same code into 60 files is a bad idea when you need to change the navbar 🙃
 
-git checkout -b feature/navn-på-funksjon
+A year later we built a much bigger project together, [TicketHub](https://github.com/nebedolagaa/tickethub-portfolio), a full ticketing site in Django with a database, user accounts and a REST API.
 
+## The team
 
-	2.	Gjør endringer og lagre dem:
-
-git add .
-git commit -m "La til ny funksjon"
-
-
-	3.	Push grenen til GitHub:
-
-git push origin feature/navn-på-funksjon
-
-
-	4.	Lag en Pull Request:
-	•	Gå til prosjektets GitHub-side.
-	•	Klikk på “Compare & pull request”.
-	•	Skriv en kort beskrivelse og send forespørselen.
-
-📬 Kontakt og tilbakemelding
-
-Har du spørsmål eller forslag? Lag gjerne en Issue i repositoriet.
+- Nikita ([@nebedolagaa](https://github.com/nebedolagaa))
+- Christoffer ([@Christofferberg77](https://github.com/Christofferberg77))
+- Kamilla ([@kamazik0102](https://github.com/kamazik0102))
+- Jesper ([@jesper0202](https://github.com/jesper0202))
+- Magnus ([@Magnusbot1](https://github.com/Magnusbot1))
+- Eskild ([@EskSond](https://github.com/EskSond))
