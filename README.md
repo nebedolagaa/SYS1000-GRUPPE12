@@ -6,6 +6,8 @@ At that point most of us had just started learning HTML and CSS, so this project
 
 Everything is plain HTML and CSS (plus a tiny bit of JavaScript). There is no backend, so the forms, login and payment don't actually do anything. It's a clickable prototype of how the site would look and work.
 
+**Try it here:** https://nebedolagaa.github.io/SYS1000-GRUPPE12/
+
 ![Home page](docs/screenshots/home.jpg)
 
 ## Screenshots
@@ -55,7 +57,7 @@ The user in the screenshots is made up.
 
 ## How to open it
 
-No installation needed. Clone the repo and open the home page in your browser:
+The easiest way is the live version on [GitHub Pages](https://nebedolagaa.github.io/SYS1000-GRUPPE12/). To run it locally, no installation is needed. Clone the repo and open the home page in your browser:
 
 ```bash
 git clone https://github.com/nebedolagaa/SYS1000-GRUPPE12.git
