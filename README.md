@@ -6,7 +6,7 @@ At that point most of us had just started learning HTML and CSS, so this project
 
 Everything is plain HTML and CSS (plus a tiny bit of JavaScript). There is no backend, so the forms, login and payment don't actually do anything. It's a clickable prototype of how the site would look and work.
 
-**Try it here:** https://nebedolagaa.github.io/SYS1000-GRUPPE12/
+**Try it here:** [https://nebedolagaa.github.io/SYS1000-GRUPPE12/](https://nebedolagaa.github.io/SYS1000-HomeRentals/)
 
 ![Home page](docs/screenshots/home.jpg)
 
